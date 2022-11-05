@@ -11,6 +11,7 @@ const { Option } = Select;
 const { TextArea } = Input;
 
 export const LoginModal = ({ open, cancel, showCreate }: any) => {
+  const router = useRouter();
   //login credentials
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +21,11 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
     const loginDetails = { email, password };
 
     try {
-      await callApi("api/auth/login", "post", loginDetails);
+      const { data } = await callApi("api/auth/login", "post", loginDetails);
+      if (data) {
+        cancel();
+        router.push("/");
+      }
     } catch (error) {
       console.log(error);
     }
