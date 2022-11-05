@@ -2,9 +2,9 @@ import { Image, Tooltip } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { SvgIcon } from "../Design/SvgIcon";
-import Properties from "../Home/Properties";
-import { LightBox, ReportModal } from "../Modals/Modals";
+import { SvgIcon } from "../../components/Design/SvgIcon";
+import Properties from "../../components/Home/Properties";
+import { LightBox, ReportModal } from "../../components/Modals/Modals";
 
 const SingleListing = () => {
   const { pathname, query } = useRouter();

@@ -1,4 +1,5 @@
 import { Drawer, Input, Select } from "antd";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -94,7 +95,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <Link href={"/"}>
             <a className="navbar-brand _navbar_logo">
-              <img
+              <Image
                 src="assets/images/logo.svg"
                 className="_navbar_logo_img"
                 alt="logo"

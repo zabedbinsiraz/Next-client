@@ -4,7 +4,7 @@ import { useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 import { SvgIcon } from "../Design/SvgIcon";
 
-import SingleListing from "../SingleListing/SingleListing";
+import SingleListing from "../../pages/SingleListing/SingleListing";
 
 const { Option } = Select;
 const { TextArea } = Input;
