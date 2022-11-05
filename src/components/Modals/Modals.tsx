@@ -16,8 +16,7 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLoginForm = async (e) => {
-    console.log(e);
+  const handleLoginForm = async () => {
     const loginDetails = { email, password };
 
     try {
@@ -58,6 +57,7 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
               <Input
                 placeholder="Email*"
                 className="_login_input"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -75,6 +75,7 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
               <Input
                 placeholder="Password*"
                 className="_login_input"
+                name="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -145,10 +146,28 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
 
 export const CreateAccount = ({ open, cancel }: any) => {
   const router = useRouter();
-  const navigateTo = (path: string) => {
-    cancel();
-    router.push(path);
+
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSignUpForm = async () => {
+    const userSignUpDetails = { fullName, email, password };
+    try {
+      const { data } = await callApi(
+        "api/auth/register",
+        "post",
+        userSignUpDetails
+      );
+      if (data) {
+        cancel();
+        router.push("/");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
+
   return (
     <>
       <Modal
@@ -167,24 +186,75 @@ export const CreateAccount = ({ open, cancel }: any) => {
             I am a professional agency
           </Checkbox>
         </div>
-        <Input placeholder="Full Name*" className="_login_input" />
-        <Input placeholder="Email*" className="_login_input" />
-        <Input placeholder="Password*" className="_login_input" />
-        <div className="_login_forgot_wrap">
-          <div className="_login_remember_check">
-            <Checkbox className="_create_professional_checkbox ">
-              I accept the legal notice and privacy
-            </Checkbox>
-          </div>
-        </div>
-        <div className="_login_submit_wrap">
-          <button
-            onClick={() => navigateTo("pricing")}
-            className="_login_submit_btn"
+        <Form onFinish={handleSignUpForm}>
+          <Form.Item
+            name="fullName"
+            rules={[
+              {
+                required: true,
+                message: "Please input your full name",
+              },
+            ]}
           >
-            Create my account
-          </button>
-        </div>
+            <Input
+              placeholder="Full Name*"
+              className="_login_input"
+              value={fullName}
+              name="fullName"
+              onChange={(e) => setFullName(e.target.value)}
+            />
+          </Form.Item>
+
+          <Form.Item
+            name="email"
+            rules={[
+              {
+                required: true,
+                message: "Please input your valid email",
+              },
+            ]}
+          >
+            <Input
+              placeholder="email"
+              className="_login_input"
+              value={email}
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Form.Item>
+
+          <Form.Item
+            name="password"
+            rules={[
+              {
+                required: true,
+                message: "Please input correct password",
+              },
+            ]}
+          >
+            <Input
+              placeholder="Password*"
+              className="_login_input"
+              value={password}
+              name="email"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </Form.Item>
+
+          <div className="_login_forgot_wrap">
+            <div className="_login_remember_check">
+              <Checkbox className="_create_professional_checkbox ">
+                I accept the legal notice and privacy
+              </Checkbox>
+            </div>
+          </div>
+          <div className="_login_submit_wrap">
+            <Button htmlType="submit" className="_login_submit_btn">
+              Create my account
+            </Button>
+          </div>
+        </Form>
+
         <div className="_login_or_wrap">
           <p className="_login_or_txt">Or</p>
         </div>
