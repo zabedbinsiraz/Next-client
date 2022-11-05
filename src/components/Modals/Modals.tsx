@@ -12,12 +12,12 @@ const { TextArea } = Input;
 
 export const LoginModal = ({ open, cancel, showCreate }: any) => {
   const router = useRouter();
-  //login credentials
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLoginForm = async (e) => {
-    e.preventDefault();
+    console.log(e);
     const loginDetails = { email, password };
 
     try {
