@@ -116,23 +116,26 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 _navbar_ul2">
               <li className="nav-item">
-                <Link href="/myinfo?mytab=message">
-                  <a className="nav-link _navbar_btn _navbar_btn3">
-                    <span className="_housiko_listing_card_item_bottom_btn_ic">
-                      <SvgIcon iconType={"chat"} color={"#000"} />
-                    </span>
-                  </a>
-                </Link>
+                <div className="nav-link _navbar_btn _navbar_btn3">
+                  <Link href="/myinfo?mytab=message">
+                    <a>
+                      <span className="_housiko_listing_card_item_bottom_btn_ic">
+                        <SvgIcon iconType={"chat"} color={"#000"} />
+                      </span>
+                    </a>
+                  </Link>
+                </div>
               </li>
               <li className="nav-item">
-                <Link
-                  href="/myinfo?mytab=alert"
-                  className="nav-link _navbar_btn _navbar_btn3"
-                >
-                  <span className="_navbar_btn_ic">
-                    <SvgIcon iconType={"noti"} />
-                  </span>
-                </Link>
+                <div className="nav-link _navbar_btn _navbar_btn3">
+                  <Link href="/myinfo?mytab=alert">
+                    <a>
+                      <span className="_navbar_btn_ic">
+                        <SvgIcon iconType={"noti"} />
+                      </span>
+                    </a>
+                  </Link>
+                </div>
               </li>
               <li className="nav-item">
                 <Link
@@ -1017,12 +1020,16 @@ const Navbar = () => {
       <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light _navbar_wrap">
           <div className="container-fluid">
-            <Link href={"/"} className="navbar-brand _navbar_logo">
-              <img
-                src="assets/images/logo.svg"
-                className="_navbar_logo_img"
-                alt="logo"
-              />
+            <Link href={"/"}>
+              <a>
+                <div className="navbar-brand _navbar_logo">
+                  <img
+                    src="assets/images/logo.svg"
+                    className="_navbar_logo_img"
+                    alt="logo"
+                  />
+                </div>
+              </a>
             </Link>
             <button
               className="navbar-toggler"
@@ -1042,19 +1049,17 @@ const Navbar = () => {
               <ul className="navbar-nav mb-2 mb-lg-0 _navbar_ul">
                 <li className="nav-item _navbar_li">
                   {/* <a className="nav-link _navbar_link" href="#0">Buy</a> */}
-                  <Link
-                    href="/listing?option=buy"
-                    className="nav-link _navbar_link"
-                  >
-                    Buy
+                  <Link href="/listing?option=buy">
+                    <a>
+                      <div className="nav-link _navbar_link">Buy</div>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item _navbar_li">
-                  <Link
-                    href="/listing?option=rent"
-                    className="nav-link _navbar_link"
-                  >
-                    Rent
+                  <Link href="/listing?option=rent">
+                    <a>
+                      <div className="nav-link _navbar_link">Rent</div>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item _navbar_li">
@@ -1078,31 +1083,34 @@ const Navbar = () => {
               </ul>
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 _navbar_ul2">
                 <li className="nav-item">
-                  <Link
-                    href="/myinfo?mytab=message"
-                    className="nav-link _navbar_btn _navbar_btn3"
-                  >
-                    <span className="_housiko_listing_card_item_bottom_btn_ic">
-                      <SvgIcon iconType={"chat"} color={"#000"} />
-                    </span>
+                  <Link href="/myinfo?mytab=message">
+                    <a>
+                      <div className="nav-link _navbar_btn _navbar_btn3">
+                        <span className="_housiko_listing_card_item_bottom_btn_ic">
+                          <SvgIcon iconType={"chat"} color={"#000"} />
+                        </span>
+                      </div>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/myinfo?mytab=alert"
-                    className="nav-link _navbar_btn _navbar_btn3"
-                  >
-                    <span className="_navbar_btn_ic">
-                      <SvgIcon iconType={"noti"} />
-                    </span>
+                  <Link href="/myinfo?mytab=alert">
+                    <a>
+                      <div className="nav-link _navbar_btn _navbar_btn3">
+                        <span className="_navbar_btn_ic">
+                          <SvgIcon iconType={"noti"} />
+                        </span>
+                      </div>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/myinfo?mytab=fav"
-                    className="nav-link _navbar_btn _navbar_btn3"
-                  >
-                    <SvgIcon iconType={"fav"} color={"#A32C2C"} />
+                  <Link href="/myinfo?mytab=fav">
+                    <a>
+                      <div className="nav-link _navbar_btn _navbar_btn3">
+                        <SvgIcon iconType={"fav"} color={"#A32C2C"} />
+                      </div>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -1156,11 +1164,12 @@ const Navbar = () => {
                                     </button> */}
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/listproperty"
-                    className="nav-link _navbar_btn _navbar_btn_list _navbar_link"
-                  >
-                    List Your Property For FREE
+                  <Link href="/listproperty">
+                    <a>
+                      <div className="nav-link _navbar_btn _navbar_btn_list _navbar_link">
+                        List Your Property For FREE
+                      </div>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
