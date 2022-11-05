@@ -1,0 +1,1035 @@
+/* hero */
+._housiko_hero_wrapper {
+  position: relative;
+  padding: 100px 0;
+  min-height: 740px;
+  background-image: url("../../../public/assets/images/hero-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+._housiko_hero_content_wrap {
+  position: relative;
+  height: 100%;
+}
+
+._housiko_hero_content {
+  position: relative;
+  width: 100%;
+  padding: 50px 48px;
+  background: #252e8d;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  top: calc(100% + 50px);
+  transform: translate(0, 20%);
+}
+
+._housiko_hero_content_draw_wrap {
+  position: absolute;
+  bottom: -54px;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  left: 0;
+}
+
+._housiko_hero_content_draw_txt {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+
+._housiko_hero_content_draw_txt span {
+  color: #252e8d;
+}
+
+._city_map_btn2 {
+  background-color: transparent;
+  border: 0 !important;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #252e8d !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 6px;
+}
+
+._housiko_hero_content::before {
+  position: absolute;
+  content: url("../../../public/assets/images/bg.svg");
+  top: 20px;
+  right: 60px;
+}
+
+._housiko_hero_content_txt {
+  text-align: center;
+  margin: 0 0 36px;
+}
+
+._housiko_hero_content_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+._housiko_hero_content_title_yl {
+  color: #ffbf00 !important;
+}
+
+._housiko_hero_content_title_a {
+  position: relative;
+}
+
+._housiko_hero_content_title_a::before {
+  content: "";
+  width: calc(100% - 12px);
+  height: 3px;
+  background-color: #ffbf00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+._housiko_hero_content_tab_content_wrap {
+  margin: 22px 0 0;
+}
+
+._housiko_hero_content_tab_ul {
+  margin: 0 0 10px 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+._housiko_hero_content_tab_li {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 0 9px 0;
+  margin: 0 17px;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  position: relative;
+}
+
+._housiko_hero_content_tab_li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+._housiko_hero_content_tab_li._active {
+  color: rgba(255, 255, 255, 1);
+}
+
+._housiko_hero_content_tab_li._active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+}
+
+._housiko_hero_content_tab_content {
+  display: flex;
+  /* align-items: center; */
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 8px;
+}
+
+._housiko_hero_content_tab_select .ant-select-selector {
+  background: #fdfdfd !important;
+  border: none !important;
+  border-radius: 6px !important;
+  height: auto !important;
+  padding: 10px 20px !important;
+}
+
+._housiko_hero_content_tab_select .ant-select-selection-item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+._housiko_hero_content_tab_select .ant-select-arrow {
+  right: 16px;
+}
+
+._housiko_hero_content_tab_input {
+  background: #fdfdfd !important;
+  border-radius: 6px !important;
+  border: none !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 19px;
+  color: #555555 !important;
+  padding: 13px 20px !important;
+  height: 100%;
+}
+
+._housiko_hero_content_tab_input_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._housiko_hero_content_tab_input::placeholder {
+  color: #555555 !important;
+}
+
+._housiko_hero_content_tab_type_wrap {
+  flex: 0 0 120px;
+}
+
+._housiko_hero_content_tab_search_wrap {
+  flex: 0 0 380px;
+}
+
+._housiko_hero_content_tab_price_wrap {
+  flex: 1 1;
+}
+
+._housiko_hero_content_tab_price_wrap ._housiko_listing_nav_dropdown {
+  width: 100%;
+}
+
+._housiko_hero_content_tab_search_wrap ._housiko_hero_content_tab_input {
+  flex: 1 1;
+  width: 100%;
+  padding: 16px 12px !important;
+}
+
+._housiko_hero_content_tab_floor_wrap {
+  /* flex: 1 1; */
+  flex: 0 0 140px;
+}
+
+._housiko_hero_content_tab_floor_wrap ._housiko_listing_floor_nav_dropdown {
+  width: 100%;
+}
+
+._housiko_hero_content_tab_floor_wrap ._housiko_hero_content_tab_select {
+  flex: 1 1;
+  width: 100% !important;
+}
+
+._housiko_hero_content_tab_room_wrap {
+  flex: 0 0 158px;
+}
+
+._housiko_hero_content_tab_room_wrap ._housiko_hero_content_tab_select {
+  flex: 1 1;
+  width: 100% !important;
+}
+
+._housiko_hero_content_tab_search_btn {
+  background: #ffbf00;
+  border-radius: 6px;
+  padding: 13px 32px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+._housiko_hero_content_tab_draw_btn2 {
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+._housiko_hero_content_tab_btn_or_txt {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+/* hero */
+/* search */
+
+._housiko_search_wrapper {
+  padding: 100px 0 50px;
+}
+
+._housiko_property_wrapper {
+  padding: 50px 0;
+}
+
+._housiko_myfav_page_album_slider ._housiko_search_wrapper {
+  padding: 21px;
+  overflow: hidden;
+}
+
+._housiko_myfav_page_album_border_slider ._housiko_search_wrap {
+  position: relative;
+}
+
+._housiko_album_slider_wrapper {
+  position: static !important;
+}
+
+/* album slider */
+._housiko_myfav_page_album_slider .ant-carousel {
+  margin: 0 -330px 0 0;
+}
+
+._housiko_myfav_page_album_slider ._housiko_search_card_wrapper {
+  padding: 0 20px 0 0;
+}
+
+._housiko_myfav_page_album_slider ._housiko_search_card_wrap {
+  border-radius: 6px;
+  padding: 8px 8px 13px;
+}
+
+._housiko_myfav_page_album_slider ._housiko_search_heading {
+  align-items: center;
+}
+
+._housiko_myfav_page_album_slider ._housiko_listing_card_item_bottom_btn {
+  width: 86px;
+  max-width: 86px;
+  background-color: transparent;
+}
+
+._housiko_myfav_page_album_slider ._housiko_slider_wrapper {
+  margin: 6px 0 0;
+}
+
+._housiko_album_card_bottom {
+  padding: 15px 9px 2px;
+}
+
+._housiko_album_card_bottom_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+
+._housiko_album_card_bottom_para {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #252e8d;
+}
+
+._housiko_album_card_bottom_txts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+._housiko_album_card_bottom_title1 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+._housiko_album_card_bottom_title2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+._housiko_album_card_bottom_p2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #555555;
+  margin: 0;
+}
+
+._housiko_album_card_bottom_info_txt {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+._housiko_album_card_bottom_btn_ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._housiko_album_card_bottom_btn1,
+._housiko_album_card_bottom_btn2 {
+  display: flex;
+  align-items: center;
+}
+
+._housiko_album_card_bottom_btn1 {
+  gap: 0 10px;
+}
+
+._housiko_album_slider_wrapper span.slick-prev {
+  color: #252e8d !important;
+  left: -20px;
+  z-index: 4;
+}
+
+._housiko_album_slider_wrapper span.slick-next {
+  color: #252e8d !important;
+  right: -20px;
+  z-index: 4;
+}
+
+._housiko_myfav_page_album_border_slider .ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  top: 50%;
+}
+
+/* album slider end*/
+
+._housiko_search_heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+._housiko_search_heading_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0;
+}
+
+._housiko_search_myinfo_heading_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+._housiko_search_heading_view_btn {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  color: #252e8d;
+  margin: 0;
+  transition: 0.2s all ease-in-out;
+  position: relative;
+}
+
+._housiko_search_heading_view_btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #252e8d;
+  bottom: -1px;
+  left: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+._housiko_search_heading_view_btn:hover::before {
+  width: 0;
+}
+
+._housiko_search_heading_view_btn._new_prop_btn {
+  color: #555555;
+}
+
+._housiko_search_heading_view_btn._new_prop_btn::before {
+  background-color: #555555;
+}
+
+._housiko_search_card_wrapper {
+  padding: 0 12px;
+  display: block;
+}
+
+._housiko_slider_wrapper {
+  width: 100%;
+  margin: 40px 0 0;
+}
+
+._housiko_search_card_wrap {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+._housiko_search_content_wrap {
+  margin: 40px 0 20px;
+}
+
+._housiko_search_card_bottom {
+  padding: 24px;
+}
+
+._housiko_search_card_bottom_txt {
+  margin: 0 0 16px 0;
+}
+
+._housiko_search_card_bottom_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+._housiko_search_card_bottom_p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  margin: 0;
+}
+
+._housiko_search_card_bottom_title2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+._housiko_search_card_bottom_p2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 0;
+}
+
+._housiko_search_card_bottom_info_ul {
+  display: flex;
+  gap: 0 24px;
+}
+
+._housiko_search_card_bottom_info_li {
+  display: flex;
+  align-items: center;
+}
+
+._housiko_search_card_bottom_info_ic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px 0 0;
+}
+
+._housiko_search_card_bottom_info_txt {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+}
+
+._housiko_search_card_bottom_btn_ul_wrap {
+  margin: 26px 0 0;
+}
+
+._housiko_search_card_bottom_btn_ul {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+._housiko_search_card_bottom_btn_li {
+  display: flex;
+  align-items: center;
+}
+
+._housiko_search_card_bottom_btn {
+  border: 1px solid #ececec !important;
+  border-radius: 2px;
+  padding: 8px 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  transition: 0.2s all ease;
+}
+
+._housiko_search_card_bottom_btn:hover {
+  background: #fafafa;
+}
+
+._housiko_search_card_bottom_btn_txt {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+/* search */
+/* accompany */
+._housiko_accompany_wrapper {
+  padding: 100px 0;
+}
+
+._housiko_accompany_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0 auto 12px;
+  max-width: 35%;
+}
+
+._housiko_accompany_content_wrap {
+  margin: 40px 0 0;
+}
+
+._housiko_accompany_content {
+  box-shadow: 0px 10px 40px rgba(37, 46, 141, 0.1);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+._housiko_accompany_content_yl {
+  background: #ffbf00;
+}
+
+._housiko_accompany_content_bl {
+  background: #252e8d;
+}
+
+._housiko_accompany_content_img_wrap {
+  border-radius: 16px;
+}
+
+._housiko_accompany_content_txt {
+  padding: 32px;
+}
+
+._housiko_accompany_content_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0 0 24px;
+}
+
+._housiko_accompany_content_p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #555555;
+  margin: 0 0 24px;
+}
+
+._housiko_accompany_content_link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252e8d;
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+  width: fit-content;
+  transition: 0.2s all ease;
+}
+
+._housiko_accompany_content_link:hover {
+  color: #000;
+}
+
+._housiko_accompany_content_bl ._housiko_accompany_content_link:hover {
+  color: #fff;
+}
+
+._housiko_accompany_content_link_ic {
+  display: flex;
+  align-items: center;
+}
+
+._housiko_accompany_content_link:hover
+  ._housiko_accompany_content_link_ic
+  svg
+  path {
+  fill: #000;
+}
+
+._housiko_accompany_content_bl
+  ._housiko_accompany_content_link:hover
+  ._housiko_accompany_content_link_ic
+  svg
+  path {
+  fill: #fff;
+}
+
+._housiko_accompany_content_bl ._housiko_accompany_content_title {
+  color: #fff;
+}
+
+._housiko_accompany_content_bl ._housiko_accompany_content_p {
+  color: #ececec;
+}
+
+._housiko_accompany_content_bl ._housiko_accompany_content_link {
+  color: #ffbf00;
+}
+
+/* accompany */
+/* Discover */
+._housiko_discover_wrapper {
+  padding: 0px 0 50px;
+}
+
+._housiko_discover_header_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 47px;
+  color: #0d2332;
+  margin: 0 0 9px 0;
+}
+
+._housiko_discover_header_p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #555555;
+  opacity: 0.7;
+  margin: 0 0 10px;
+}
+
+._housiko_discover_tab_wrap {
+  padding: 32px 0 10px;
+}
+
+._housiko_discover_tab_ul {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+._housiko_discover_tab_li {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0d2332;
+  padding: 0 0 20px;
+  position: relative;
+}
+
+._housiko_discover_tab_li._active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffbf00;
+}
+
+._housiko_discover_tab_content_wrap {
+  padding: 20px 0 10px;
+}
+
+._housiko_discover_tab_content_txt {
+  margin: 12px 0 32px;
+}
+
+._housiko_discover_tab_content_title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #0d2332;
+  margin: 0 0 10px;
+}
+
+._housiko_discover_tab_content_p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0d2332;
+  opacity: 0.7;
+  margin: 0 0 10px;
+}
+
+/* Discover */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: black !important;
+  background: #ffffff;
+  box-shadow: 0px -1px 12px rgba(48, 114, 255, 0.1);
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-carousel ._housiko_album_slider_wrapper .slick-prev,
+.ant-carousel ._housiko_album_slider_wrapper .slick-next,
+.ant-carousel ._housiko_album_slider_wrapper .slick-prev:hover,
+.ant-carousel ._housiko_album_slider_wrapper .slick-next:hover {
+  background-color: #fff;
+}
+
+.ant-carousel .slick-prev {
+  left: -50px;
+  z-index: 2;
+}
+
+.ant-carousel .slick-prev:hover {
+  color: black !important;
+}
+
+.ant-carousel .slick-next {
+  right: -50px;
+  z-index: 2;
+}
+
+.ant-carousel .slick-next:hover {
+  color: black !important;
+}
+
+/* City Modal */
+._city_modal .ant-modal-header {
+  padding-bottom: 0;
+}
+
+._city_modal .ant-modal-title {
+  font-size: 16px;
+}
+
+._city_input {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  background: #ffffff;
+  border: 1px solid #252e8d !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin: 0 0 32px;
+}
+
+._city_map_btn {
+  background: #ffffff;
+  border: 1px solid #000000 !important;
+  border-radius: 6px;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 8px;
+  transition: 0.2s all ease;
+}
+
+._city_map_btn:hover {
+  background-color: #252e8d;
+}
+
+._city_map_btn ._city_map_btn_ic svg path {
+  transition: 0.2s all ease;
+}
+
+._city_map_btn:hover ._city_map_btn_ic svg path {
+  fill: #fff;
+}
+
+._city_map_btn:hover ._city_map_btn_txt {
+  color: #fff;
+}
+
+._city_map_btn_txt {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #252e8d;
+  transition: 0.2s all ease;
+}
+
+._city_map_tab_wrap {
+  margin-top: 32px;
+  border-bottom: 1px solid #ececec;
+}
+
+._city_map_tab_ul {
+  display: flex;
+  align-items: center;
+  background: #f0f1f9;
+  border-radius: 1px;
+}
+
+._city_map_tab_li {
+  cursor: pointer;
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 10px 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s all ease;
+}
+
+._city_map_tab_li:hover {
+  background-color: #ecedf9;
+}
+
+._city_map_tab_li._active {
+  border-color: #252e8d;
+}
+
+._city_map_tab_content {
+  padding: 40px 40px 20px;
+}
+
+._city_map_tab_content ._login_input_label {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+._city_map_tab_content_ul_wrap {
+  margin: 24px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._city_input_label {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+._city_map_tab_content_li {
+  margin: 0px 0 24px;
+}
+
+._city_modal_btn {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252e8d;
+  background: #fff;
+  padding: 14px 16px;
+}
+
+._city_modal_apply_btn {
+  background: #252e8d;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+._city_modal .ant-modal-footer {
+  padding: 10px 24px 24px;
+  border: none !important;
+}
+
+/* City Modal */
+
+/* myinfo navbar */
+
+._myinfo_navbar_btn {
+  background: #f3f3f9;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-right: 16px;
+}
+
+._myinfo_navbar_btn2 {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._housiko_hero_content_tab_search_wrap ._housiko_hero_content_tab_input {
+  padding: 16px 10px 16px 24px !important;
+}

@@ -1,0 +1,111 @@
+/* Common */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+button {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: 0.2s all ease;
+}
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #252e8d;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(91, 94, 98);
+}
+
+/* Scrollbar */
+/* react-image-gallery */
+/* @import "react-image-gallery/styles/css/image-gallery.css"; */
+/* react-image-gallery */
+/* Common */
+/* Navbar */
+/* @import './Navbar/Navbar.css'; */
+/* Navbar */
+/* Hero */
+/* @import './Home/Home.css'; */
+/* Hero */
+/* Listing */
+/* @import './Listing/Listing.css'; */
+/* Listing */
+/* List Property */
+/* @import './ListProperty/ListProperty.css'; */
+/* List Property */
+/* MyInfo */
+/* @import './MyInfo/MyInfo.css'; */
+/* MyInfo */
+/* Login */
+/* @import './Login/Login.css'; */
+/* Login */
+/* Pricing */
+/* @import './Pricing/Pricing.css'; */
+/* Pricing */
+/* AgentList */
+/* @import './AgentList/AgentList.css'; */
+/* AgentList */
+/* Footer */
+/* @import './Footer/Footer.css'; */
+/* Footer */
+/* Dashboard */
+/* @import './Dashboard/Dashboard.css'; */
+/* Dashboard */
+/* DashboardAgent */
+/* @import './DashboardAgent/DashboardAgent.css'; */
+/* DashboardAgent */

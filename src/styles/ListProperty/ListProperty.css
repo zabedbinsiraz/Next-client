@@ -1,0 +1,737 @@
+._housiko_list_prop_wrapper {
+    padding: 60px 0;
+    background: #F3F3F9;
+}
+
+._housiko_list_prop_content_wrap {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 68px 54px;
+}
+
+._housiko_list_prop_main_tab_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+}
+
+._housiko_list_prop_main_tab_li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 23px 0 10px;
+    flex: 1 1;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+._housiko_list_prop_main_tab_li._active {
+    border-color: #252E8D;
+}
+
+._housiko_list_prop_main_tab_li._active ._housiko_list_prop_main_tab_li_ic svg path {
+    fill: #252E8D;
+}
+
+._housiko_list_prop_main_tab_come {
+    position: relative;
+}
+
+._housiko_list_prop_main_tab_come_box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #FFBF00;
+    border-radius: 30px;
+    width: 62px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_drawer_li_tab_come_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFBF00;
+    border-radius: 30px;
+    width: 62px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_list_prop_main_tab_come_box_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    color: #252E8D;
+}
+
+._housiko_list_prop_main_tab_li_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    margin: 8px 0 0 0;
+}
+
+._housiko_list_prop_tab_ul {
+    background: #FFFFFF;
+    margin: 28px 0 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_list_prop_tab_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    flex: 1 1;
+    padding: 15px 0;
+    border: 1.5px solid rgba(85, 85, 85, 0.4);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+._housiko_list_prop_tab_li:nth-child(1) {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+._housiko_list_prop_tab_li:nth-last-child(1) {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    align-self: stretch;
+    padding: 0;
+    height: auto;
+}
+
+._housiko_list_prop_tab_li._active {
+    border-color: #252E8D;
+    color: #252E8D;
+}
+
+._housiko_list_prop_toggle_btn_ul {
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+}
+
+._housiko_list_prop_toggle_btn_li {
+    display: flex;
+    align-items: center;
+}
+
+._housiko_list_prop_toggle_btn {
+    position: relative;
+    background-color: #D9D9D9;
+    border-radius: 22px;
+    margin: 0 8px 0 0;
+    height: 24px;
+    border: 1px solid transparent !important;
+}
+
+._housiko_list_prop_toggle_btn.ant-switch-checked {
+    border: 1px solid #252E8D !important;
+    background-color: #fff;
+}
+
+._housiko_list_prop_toggle_btn.ant-switch-checked .ant-switch-handle::before {
+    background-color: #252E8D;
+}
+
+._housiko_list_prop_toggle_btn_ic {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #252E8D;
+    left: 1px;
+    top: 1px;
+}
+
+._housiko_list_prop_toggle_btn_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+._housiko_list_prop_toggle_btn_disable {
+    background: #D9D9D9;
+    border: 1px solid #ECECEC !important;
+}
+
+._housiko_list_prop_toggle_btn_disable ._housiko_list_prop_toggle_btn_ic {
+    background: #fff;
+}
+
+._housiko_list_prop_characterstics {
+    margin: 60px 0 10px;
+}
+
+._housiko_list_prop_charactersitics_title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+._housiko_list_prop_characterstics_input_wrap {
+    margin: 24px 0;
+    position: relative;
+}
+
+._housiko_list_prop_characterstics_input_wrap ._price_select_wrap {
+    right: 7px;
+    top: 7px;
+}
+
+._housiko_list_prop_characterstics_big_input_wrap {
+    margin: 60px 0;
+}
+
+._housiko_list_prop_characterstics_input_inner {
+    position: relative;
+}
+
+._housiko_list_prop_characterstics_select {
+    position: absolute;
+    border-radius: 4px;
+    right: 3.5px;
+    top: 6.5px;
+}
+
+._housiko_list_prop_characterstics_select .ant-select-selector {
+    background: #ECECEC !important;
+    padding: 6px 8px !important;
+    box-shadow: none;
+    height: 100% !important;
+    box-shadow: none !important;
+}
+
+._housiko_list_prop_characterstics_select .ant-select-arrow {
+    right: 10px;
+}
+
+._housiko_list_prop_characterstics_label_ics {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 16px;
+}
+
+._housiko_list_prop_characterstics_label_ics ._housiko_list_prop_characterstics_label {
+    margin: 0 6px 0 0;
+}
+
+._housiko_list_prop_characterstics_label_ic {
+    display: flex;
+}
+
+._housiko_list_prop_characterstics_label {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin: 0 0 13px;
+}
+
+._housiko_list_prop_characterstics_input {
+    background: #FFFFFF;
+    border: 1px solid rgba(85, 85, 85, 0.4) !important;
+    border-radius: 6px;
+    padding: 15px 12px;
+    box-shadow: none !important;
+}
+
+._housiko_list_prop_characterstics_input::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_list_prop_characterstics_input1 {
+    padding: 15px 58px 15px 12px !important;
+}
+
+._input_disabled ._housiko_list_prop_characterstics_input {
+    background-color: #f0f0f0;
+    /* pointer-events: none; */
+    cursor: not-allowed;
+}
+
+._housiko_list_prop_characterstics_select2 .ant-select-selector {
+    background: #FFFFFF;
+    border: 1px solid rgba(85, 85, 85, 0.4) !important;
+    border-radius: 6px;
+    padding: 15px 12px;
+    box-shadow: none !important;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_list_prop_characterstics_title {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    margin: 0 0 -12px 0;
+}
+
+._housiko_list_prop_characterstics_address_title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0 0 24px;
+}
+
+._housiko_list_prop_characterstics_input_inner2 {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+}
+
+._housiko_list_prop_characterstics_input2 {
+    background: #ECECEC;
+    border: 1px solid rgba(85, 85, 85, 0.4) !important;
+    border-radius: 6px;
+    box-shadow: none !important;
+    padding: 15px 12px;
+    flex: 0 0 75%;
+}
+
+._housiko_list_prop_characterstics_input2::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_list_prop_characterstics_input_inner2_inner {
+    flex: 0 0 calc(100% - 180px);
+    position: relative;
+}
+
+._housiko_list_map_btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    background-color: #252E8D;
+    border-radius: 6px;
+}
+
+._housiko_list_prop_characterstics_input_btn {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #252E8D;
+    border-radius: 6px;
+    padding: 14px 34px;
+    flex: 1 1;
+    align-self: stretch;
+}
+
+._housiko_list_prop_characterstics_input_btn:hover {
+    background: #1d2580;
+}
+
+._housiko_list_prop_characterstics_map_wrap .mapouter {
+    width: 100%;
+}
+
+._housiko_list_prop_characterstics_map_wrap .gmap_canvas {
+    width: 100%;
+}
+
+._housiko_list_prop_toggle_btn_ul2 ._housiko_list_prop_toggle_btn_txt {
+    font-weight: 500;
+}
+
+._housiko_list_prop_toggle_btn_ul2 ._housiko_list_prop_toggle_btn_txt span {
+    font-weight: 700;
+}
+
+._housiko_list_prop_toggle_btn_ul2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._housiko_list_prop_toggle_btn_li2 {
+    gap: 0 4px;
+}
+
+._housiko_list_prop_toggle_btn_txt2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252E8D;
+}
+
+._housiko_list_prop_characterstics_upload_img_wrap {
+    margin: 24px 0;
+}
+
+._housiko_list_prop_characterstics_upload_img_inner {
+    background: rgba(37, 46, 141, 0.04);
+    border: 1px dashed #252E8D;
+    border-radius: 6px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+._housiko_list_prop_characterstics_upload_img_inner span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_list_prop_characterstics_upload_img_btn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #252E8D;
+
+}
+
+._housiko_list_prop_characterstics_upload_img_btn_txt {
+    margin-top: 10px;
+
+}
+
+._housiko_list_prop_characterstics_add_img_btn {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #252E8D;
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    border: 1px solid #252E8D !important;
+    margin: 24px 0;
+}
+
+._housiko_list_prop_characterstics_add_img_btn:hover {
+    color: #fff;
+}
+
+._housiko_list_prop_tab_ul3 {
+    margin: 0px 0 16px !important;
+}
+
+._housiko_list_prop_characterstics_drop_wrap {
+    gap: 0 24px;
+}
+
+._housiko_list_prop_characterstics_drop_wrap ._housiko_list_prop_characterstics_input_inner {
+    flex: 0 0 48%;
+}
+
+._housiko_list_prop_feature_wrap {
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    margin: 24px 0;
+    display: flex;
+}
+
+._housiko_list_prop_feature_inner {
+    flex: 1 1;
+}
+
+._housiko_list_prop_feature_inner2 {
+    padding: 0 0 0 0px;
+}
+
+
+._housiko_list_prop_feature_inner:nth-child(1) {
+    border-right: 1px solid #ECECEC;
+}
+
+._housiko_list_prop_feature_content {
+    padding: 24px 24px 44px 0;
+}
+
+._housiko_list_prop_feature_inner2 ._housiko_list_prop_feature_content {
+    padding: 24px 24px 44px 30px;
+}
+
+._housiko_list_prop_feature_content:nth-child(2) {
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+
+._housiko_list_prop_feature_content_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+._housiko_list_prop_feature_check_wrap {
+    margin: 16px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+._housiko_list_prop_feature_inner2 ._housiko_list_prop_feature_check_wrap {
+    display: block;
+}
+
+._housiko_list_prop_feature_check {
+    flex: 0 0 50%;
+    margin: 0 0 16px 0;
+}
+
+._housiko_list_prop_contact_input_inner {
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+    flex-wrap: wrap;
+}
+
+._housiko_list_prop_feature_wrap ._city_input_check_login_input_check {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_list_prop_contact_info_wrap ._housiko_list_prop_characterstics_label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+}
+
+._housiko_list_prop_characterstics_label_unit {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+
+._housiko_list_prop_contact_info_wrap {
+    margin: 12px 0;
+}
+
+._housiko_list_prop_contact_info_wrap:nth-last-child(1) {
+    flex: 0 0 50%;
+}
+
+._housiko_list_prop_finish_wrap {
+    padding: 24px 0;
+    border-top: 1px solid #ECECEC;
+}
+
+._housiko_list_prop_preview_btn {
+    background-color: transparent;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #555555;
+}
+
+._housiko_list_prop_draft_btn {
+    background-color: transparent;
+    color: #252E8D;
+}
+
+._housiko_list_prop_finish_btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 16px;
+}
+
+._list_prop_login_modal_wrapper {
+    max-width: 380px !important;
+    margin: 0 auto;
+}
+
+._list_prop_login_modal_title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-align: center;
+    margin: 24px 0;
+}
+
+
+._housiko_list_prop_contact_infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 24px;
+}
+
+._housiko_list_prop_contact_info {
+    margin: 12px 0;
+    width: 50%;
+}
+
+._housiko_list_prop_characterstic_label {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+    margin: 0 0 8px;
+}
+
+._login_input_label_checkbox {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_form_inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 8px;
+}
+
+._housiko_listing_property_inpt {
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+    width: 70%;
+    height: 48px;
+    padding: 0 16px;
+    color: #000 !important;
+    transition: .2s all ease-in-out;
+    outline: 0;
+}
+
+
+._housiko_list_prop_contact_info_select_language {
+    display: flex;
+    align-items: center;
+    gap: 0 60px;
+    margin: 0 0 14px;
+}
+
+._housiko_list_prop_characterstics_input_inner_labl {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+._housiko_list_prop_contact_info_language_spoken {
+    margin: 14px 0 20px;
+    width: 100%;
+}
+
+._select_languages_wd1 {
+    width: 210px;
+}
+
+._select_languages_wd1 .ant-select.ant-select-single.ant-select-show-arrow {
+    width: 100%;
+}
+
+._housiko_list_prop_contact_info_select_language2_inner {
+    border: 1px solid #ECECEC;
+    border-radius: 6px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_list_prop_contact_info_select_language2_inner .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 0 !important;
+    background: transparent;
+    box-shadow: none !important;
+}
+
+._housiko_list_prop_characterstics_input_wrap ._housiko_listing_nav_dropdown_txt {
+    width: 100%;
+    justify-content: space-between;
+}
+
+._housiko_list_prop_characterstics_input.ant-input[disabled]::placeholder {
+    color: rgba(0, 0, 0, .2);
+    transition: .2s all ease;
+}
+
+._select_language_wd1 .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector,
+._select_language_wd2 .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: transparent;
+    filter: grayscale(1);
+}

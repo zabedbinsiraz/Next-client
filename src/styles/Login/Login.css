@@ -1,0 +1,318 @@
+/* Login Modal */
+._login_modal .ant-modal-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+._login_modal .ant-modal-header {
+    border-radius: 22px;
+    border: none;
+    padding: 24px;
+}
+
+._login_modal._login_modal_space .ant-modal-header {
+    padding: 24px 24px 0;
+}
+
+._city_map_btns {
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+}
+
+._login_modal .ant-modal-content {
+    border-radius: 22px;
+}
+
+._login_modal .ant-modal-close {
+    top: 2px;
+    right: 8px;
+}
+
+._login_input {
+    background: #FFFFFF;
+    border: 1px solid #DADADA !important;
+    border-radius: 6px;
+    padding: 14px 16px;
+    box-shadow: none !important;
+    margin: 0 0 16px 0;
+}
+
+._login_input::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._login_forgot_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 24px 0;
+}
+
+._login_remember_check {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+}
+
+._login_input_check {
+    width: fit-content;
+
+}
+
+._login_input_label {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A5A5A5;
+    /* margin: 0 0 0 10px; */
+    cursor: pointer;
+}
+
+._login_input_label:hover {
+    color: #909090;
+}
+
+._login_forgot_link {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252E8D;
+    display: flex;
+    align-items: center;
+}
+
+._login_submit_wrap {
+    margin: 24px 0;
+}
+
+._login_submit_btn_wrap {
+    margin: 24px 0;
+}
+
+._login_submit_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #252E8D;
+    border-radius: 6px;
+    padding: 14px 0;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: .2s all ease;
+}
+
+._login_submit_btn:hover {
+    background: #0D2332;
+}
+
+._login_submit_txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252E8D;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+._login_or_wrap {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._login_or_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+._login_or_txt::before,
+._login_or_txt::after {
+    content: '';
+    position: absolute;
+    width: 176px;
+    max-width: 176px;
+    height: 1px;
+    background-color: #ECECEC;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+}
+
+._login_or_txt::before {
+    left: -180px;
+}
+
+._login_or_txt::after {
+    right: -180px;
+}
+
+._login_auth_wrap {
+    margin: 40px 0 10px;
+}
+
+._login_auth_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    width: 100%;
+    padding: 12px 0;
+    background: #FFFFFF;
+    border: 1px solid #DADADA !important;
+    border-radius: 6px;
+    margin: 0 0 16px;
+    transition: .2s all ease;
+}
+
+._login_auth_btn:hover {
+    background-color: #252E8D;
+}
+
+._login_auth_btn:hover ._login_auth_btn_txt {
+    color: #fff;
+}
+
+._fb_btn {
+    background-color: #1877F2;
+}
+
+._fb_btn:hover {
+    background-color: #0b6ae6;
+}
+
+._fb_btn ._login_auth_btn_txt {
+    color: #fff;
+}
+
+._login_auth_btn_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+._login_auth_apl_btn {
+    background: #000000;
+}
+
+._login_auth_apl_btn:hover {
+    background: #666666;
+}
+
+._login_auth_apl_btn ._login_auth_btn_txt {
+    color: #FFFFFF;
+}
+
+/* Login Modal */
+/* Create Modal */
+._create_professional {
+    margin: 0 0 16px;
+}
+
+._create_professional_checkbox {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+/* Create Modal */
+
+/* create alert Modal */
+
+._login_modal._alert_modal .ant-modal-content {
+    padding: 70px 14px 110px;
+    border-radius: 20px;
+}
+
+._login_modal._alert_modal .ant-modal-close {
+    top: 0;
+    right: 0;
+}
+
+._alert_modal_illustration {
+    width: 257px;
+    max-width: 257px;
+    margin: 0 auto 65px;
+}
+
+._alert_modal_content_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+._alert_modal_content_para {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #555555;
+}
+
+/* create report Modal */
+
+._report_modal .ant-modal-content {
+    padding: 30px 0;
+    border-radius: 20px;
+}
+
+._report_modal_txt_box .ant-input {
+    border-radius: 6px;
+}
+
+._report_modal_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #252E8D;
+    border-radius: 6px;
+    padding: 14px 0;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: .2s all ease;
+    text-transform: capitalize;
+}
+
+._report_modal_button:hover {
+    background: #0D2332;
+}
+
+

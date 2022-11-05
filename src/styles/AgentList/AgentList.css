@@ -1,0 +1,183 @@
+._housiko_agentlist_wrapper {
+    padding: 60px 0 100px;
+    background: #F3F3F9;
+}
+
+._housiko_agentlist_title1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 42px;
+}
+
+._housiko_agentlist_search {
+    width: fit-content;
+    position: relative;
+}
+
+._housiko_agentlist_search_inpt {
+    background: #FDFDFD;
+    border: 1px solid #BBBBBB;
+    border-radius: 6px;
+    width: 271px;
+    height: 48px;
+    padding: 0 10px 0 50px;
+    color: #000000;
+    outline: 0;
+}
+._housiko_agentlist_search_inpt::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #999999;
+    transition: .2s all ease-in-out;
+}
+
+._housiko_agentlist_search_btn {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    background: transparent;
+}
+
+._housiko_agentlist_search_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+._housiko_agentlist_select {
+    display: flex;
+    align-items: center;
+}
+
+._agent_select {
+    background: transparent;
+    border: none !important;
+}
+
+._agent_select .ant-select-selection-item {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0 !important;
+}
+._agent_select .ant-select-selection-item {
+    font-family: 'Inter';
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 19px;
+    color: #000 !important;
+}
+
+._agent_select .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 0;
+    box-shadow: none !important;
+    background: #F2F2F9;
+}
+
+
+._housiko_agentlist_card {
+    background: #F8F8F8;
+    border-radius: 6px;
+    padding: 24px 20px 24px 24px;
+    margin-bottom: 24px;
+}
+
+._housiko_agentlist_card_ic_address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 18px;
+    margin-bottom: 14px;
+}
+
+._housiko_agentlist_card ._listing_modal_card_advertise_box_company_ic_address {
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+}
+
+._housiko_agentlist_card_ic_address ._listing_modal_card_advertise_box_company_ic {
+    width: 200px;
+}
+
+._housiko_agentlist_card_ic_address ._listing_modal_card_advertise_box_company_address {
+    width: 210px;
+}
+
+._housiko_agentlist_card_ic_address ._listing_modal_card_advertise_box_company_address_para {
+    max-width: 100%;
+}
+
+._housiko_agentlist_card_property_para {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #000000;
+
+}
+
+._housiko_agentlist_card_button_link ._listing_modal_card_advertise_box_chat_buttons {
+    align-items: center;
+}
+
+._listing_modal_card_advertise_box_rating_list {
+    display: flex;
+    align-items: center;
+    gap: 0 3px;
+}
+
+._listing_modal_card_advertise_box_rating_ic {
+    display: flex;
+}
+
+._listing_modal_card_advertise_box_rating_ic._listing_modal_card_advertise_box_rating_count {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+
+._housiko_agentlist_card_link_tag {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #252E8D;
+    transition: .2s all ease-in-out;
+    display: inline-block;
+}
+
+._housiko_agentlist_card_button_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._housiko_agentlist_card_link_tag:hover {
+    color: #999999;
+}
+
+._housiko_agentlist_cards ._housiko_myfav_pagination_wrap {
+    margin: 60px 0 0;
+}
+
+
+
+
+
+
+
+
+

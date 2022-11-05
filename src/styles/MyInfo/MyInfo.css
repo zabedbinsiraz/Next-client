@@ -1,0 +1,2359 @@
+/* My info */
+._myinfo_wrapper {
+    padding: 0 24px;
+}
+
+.ant-select-dropdown {
+    box-shadow: 0px 0px 24px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+    padding: 0 !important;
+}
+
+/* My info */
+
+/* My Ads */
+
+._housiko_myads_btns_wrapper {
+    margin: 60px 0 52px;
+}
+
+._housiko_myads_all_btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+._housiko_myads_btn {
+    background: transparent;
+    transition: .2s all ease-in-out;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent !important;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px 0;
+}
+
+._housiko_myads_btn_active {
+    border-color: #252E8D !important;
+}
+
+._housiko_myads_btn_ic {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+._bg_ic1 {
+    background: rgba(37, 46, 141, 0.05);
+}
+
+._bg_ic2 {
+    background: #FAF5F5;
+}
+
+._bg_ic3 {
+    background: rgba(255, 191, 0, 0.05);
+}
+
+._bg_ic4 {
+    background: rgba(163, 44, 44, 0.05);
+}
+
+._housiko_myads_btn_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+._housiko_myads_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1;
+    gap: 0 48px;
+}
+
+._housiko_myads_btn_list:last-child {
+    margin: 0;
+}
+
+._housiko_myads_search_wrapper {
+    margin-bottom: 16px;
+}
+
+._housiko_myads_search_line {
+    border-top: 1px solid #ECECEC;
+    padding-bottom: 24px;
+}
+
+._housiko_myads_search_inpt {
+    background: #FDFDFD !important;
+    border: 1px solid #BBBBBB !important;
+    border-radius: 6px;
+    width: 271px;
+    height: 48px;
+    color: #000;
+    outline: none;
+    transition: .2s all ease-in-out;
+    box-shadow: none !important;
+}
+
+._housiko_myads_search_inpt::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #999999;
+    transition: .2s all ease-in-out;
+}
+
+._housiko_myads_search_btn {
+    background: transparent;
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
+
+._housiko_myads_search_inpt .ant-input {
+    background: #FDFDFD !important;
+}
+
+._housiko_myads_search_select_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+}
+
+._housiko_myads_search_list_space {
+    margin: 0 7px 0 0;
+}
+
+._housiko_myads_search_list_space:last-child {
+    margin: 0;
+}
+
+._housiko_myads_select {
+    border-radius: 6px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._nav_buy_select {
+    border: 1px solid rgba(85, 85, 85, 0.4);
+}
+
+._housiko_myads_select_wd1 {
+    width: 101px;
+}
+
+._housiko_myads_select_wd2 {
+    width: 140px;
+}
+
+._housiko_myads_select_wd3 {
+    width: 164px;
+}
+
+._housiko_myads_select .ant-select-selection-item {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+._housiko_myads_select .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 0;
+    box-shadow: none !important;
+}
+
+._housiko_myads_select .ant-select {
+    width: 100%;
+}
+
+._housiko_myads_select .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: transparent;
+    box-shadow: none;
+    border-right-width: 0;
+    outline: 0;
+}
+
+._housiko_myads_cards_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+._housiko_myads_card_item {
+    display: flex;
+}
+
+._housiko_myads_card_item_bg {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 6px 0px !important;
+}
+
+._housiko_myads_card_center_links {
+    margin-bottom: 34px;
+}
+
+._housiko_myads_card_center_link_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    background: transparent;
+}
+
+._housiko_myads_card_center_link_list:last-child {
+    margin-bottom: 0;
+}
+
+._housiko_myads_card_center_link_list svg {
+    margin: 0 6px 0 0;
+}
+
+._housiko_myads_card_center_link_list_para {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+._housiko_myads_card_center_link_list_para1 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+._last_list {
+    display: flex;
+    align-items: center;
+}
+
+._navbar_btn3._housiko_myads_card_center_bottm_list_select {
+    padding: 0 !important;
+}
+
+._housiko_myads_card_center_bottm_list_select .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+.ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    padding-right: 23px;
+    display: flex;
+    align-items: center;
+}
+
+._housiko_myads_card_center_bottm_list_select .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 24px;
+}
+
+._housiko_myads_card_center_bottm_list {
+    margin-bottom: 12px;
+}
+
+._housiko_myads_card_center_bottm_list:last-child {
+    margin-bottom: 0;
+}
+
+._housiko_myads_card_center_bottm_list_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+._housiko_myads_card_center_bottm_list_txt1 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+._housiko_myads_card_add_property_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+._housiko_myads_card_add_property_btn_span {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+._housiko_myads_card_add_property svg {
+    margin-bottom: 12px;
+}
+
+
+._housiko_listing_card_item_slide_img1 {
+    border-radius: 6px 0 6px 6px;
+    height: 100%;
+}
+
+._housiko_listing_card_item_content_img_logo1 {
+    width: 30px;
+}
+
+.myads_inner_txt {
+    justify-content: space-between;
+}
+
+._housiko_listing_card_item_content_inner_title1 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #969595;
+}
+
+._myads_whatsapp_btn {
+    width: 145px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #30B742 !important;
+    background: #fff;
+    padding: 11px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    color: #30B742 !important;
+}
+
+._housiko_myads_card_add_property .ant-upload.ant-upload-select-picture-card {
+    width: 272px;
+    max-width: 272px;
+    height: 206px;
+    background-color: #ECECEC;
+    border: 1px dashed #555555;
+    border-radius: 6px;
+}
+
+._housiko_myads_card_add_property {
+    margin: 8px 0 22px;
+}
+
+._housiko_myads_qr_code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+._housiko_myads_qr_code img {
+    max-width: 240px;
+}
+
+._housiko_myads_qr_code_btn_wrap {
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+._housiko_myads_qr_code_btn {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #555555;
+    background: none;
+    text-decoration: underline;
+}
+
+._print_btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #adadad !important;
+    background-color: #FBFCFC;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+}
+
+._housiko_myads_add_porperty_btn {
+    color: #2430b1 !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: 600;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+/* My Ads */
+
+/* My Alert */
+._housiko_myalerts_card_wrap {
+    padding-top: 30px;
+}
+
+._housiko_myalerts_card_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+._housiko_myalerts_card_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+._housiko_myalerts_card {
+    background: rgba(37, 46, 141, 0.05);
+    border-radius: 10px;
+    padding: 24px 24px 33px;
+}
+
+._housiko_myalerts_card_cont {
+    border-bottom: 1px solid #DADADA;
+}
+
+._housiko_myalerts_card_cont1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+._housiko_myalerts_card_bottm_cont_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+._housiko_myalerts_card_cont2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #555555;
+    padding-bottom: 70px;
+}
+
+._housiko_myalerts_card_bottm_lft_cont {
+    position: relative;
+}
+
+._housiko_myalerts_card_bottm_lft_cont::before {
+    position: absolute;
+    content: "";
+    background: #DADADA;
+    transform: rotate(90deg);
+    top: 50%;
+    right: -45px;
+    width: 44px;
+    height: 1px;
+}
+
+._housiko_myalerts_card_bottm_lft_cont1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+._housiko_myalerts_card_bottm_lft_cont2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+._housiko_myalerts_card_bottm_left_link {
+    width: 100px;
+}
+
+._housiko_myalerts_card_bottm_cont_link1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #252E8D !important;
+    display: flex;
+    align-items: center;
+}
+
+._housiko_myalerts_card_bottm_crud_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._housiko_myalerts_card_bottm_crud_link1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252E8D;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #FFFFFF !important;
+    transition: .2s all ease;
+    padding: 14px 80px !important;
+}
+
+._housiko_myalerts_card_bottm_crud_link1:hover {
+    background: #0a1268;
+}
+
+._housiko_myalerts_card_bottm_crud_link2 {
+    background: rgba(163, 44, 44, 0.05);
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+}
+
+._housiko_myalerts_card_bottm_crud_link2:hover {
+    background: rgba(163, 44, 44, 0.18);
+}
+
+._housiko_myalerts_card_bottm_crud_link3 {
+    background: rgba(37, 46, 141, 0.05);
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+}
+
+._housiko_myalerts_card_bottm_crud_link3:hover {
+    background: rgba(37, 46, 141, 0.18);
+}
+
+/* My Alert */
+
+/* My Fav */
+._mymessage_filter {
+    margin-bottom: 10px;
+}
+
+._housiko_myfav_page_wrap ._housiko_myads_card_add_property {
+    margin: 14px 0 44px;
+}
+
+._housiko_myfav_page_wrap ._housiko_myads_card_add_property_btn {
+    width: 300px;
+}
+
+._housiko_myfav_page_album_title {
+    margin-bottom: 24px;
+}
+
+._housiko_myfav_page_album_slider {
+    margin-bottom: 70px;
+}
+
+._housiko_myfav_page_album_border_slider {
+    background: #FFFFFF;
+    border: 2px solid #FFBF00;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+._housiko_myfav_page_title {
+    margin-bottom: 37px;
+}
+
+._housiko_myfav_page_title1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+._housiko_myfav_card_item_txt_wh {
+    color: #fff;
+    background-color: #252E8D;
+}
+
+._housiko_myfav_img_border {
+    background: #FFFFFF;
+    border-radius: 6px 6px 0px 6px;
+    padding: 8px;
+}
+
+._housiko_myfav_card_item_content_bottom {
+    border-radius: 0 6px 6px 0;
+    margin: 0 0 0 -10px;
+}
+
+._housiko_myfav_card_item_content_txt,
+._housiko_myfav_card_item_content_para {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._housiko_myfav_card_item_content_p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #999999;
+}
+
+._housiko_myfav_card_item_content_txt_inner {
+    display: flex;
+    align-items: center;
+}
+
+._housiko_myfav_card_item_content_txt_inner svg {
+    margin: 0 4px 0 0;
+}
+
+._housiko_myfav_card_item_content_txt_inner_para {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #555555
+}
+
+._phone_btn {
+    width: 140px;
+    border: 1px solid #252E8D !important;
+    border-radius: 6px;
+    background: #fff;
+    padding: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+._phone_btn ._housiko_listing_card_item_bottom_btn_txt {
+    color: #252E8D;
+}
+
+._housiko_myfav_card_item_txt_bl {
+    background: #FFBF00;
+    color: #000;
+}
+
+._housiko_myfav_card_item_gap {
+    gap: 0 5px;
+}
+
+._housiko_myfav_card_item_slide_img {
+    border-radius: 6px 0 6px 6px;
+    height: 100%;
+}
+
+._housiko_myfav_feat {
+    margin-bottom: 20px;
+}
+
+._housiko_myfav_pagination_wrap {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._navbar_btn1 {
+    background: #252E8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF !important;
+    border: 1px solid #252E8D !important;
+    padding: 10px 0 !important;
+    border-radius: 6px;
+    gap: 0 8px;
+}
+
+/* My Fav */
+
+/* My Product */
+
+._housiko_myads_search {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+._housiko_myproduct_search_balance {
+    width: 200px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #F4F4F9;
+    border: 1px solid #ECECEC;
+    border-radius: 6px;
+}
+
+._housiko_myproduct_search_balance_txt1 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+._housiko_myproduct_search_balance_txt2 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #252E8D;
+}
+
+._housiko_myproduct_left_card_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+._housiko_myproduct_left_card_head_para1 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+._housiko_myproduct_left_card {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 22px;
+}
+
+._housiko_listing_card_item_feature_ul._housiko_myproduct_card_item {
+    max-width: 100%;
+}
+
+._housiko_myproduct_left_card_img {
+    margin: 0 15px 0 0;
+    position: relative;
+}
+
+._housiko_myproduct_left_card_img_tag {
+    width: 145px;
+    border-radius: 6px 0 6px 6px;
+}
+
+._housiko_myproduct_left_card_cont_link {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #252E8D;
+    display: inline-block;
+    transition: .2s all ease-in-out;
+    position: relative;
+}
+
+._housiko_myproduct_left_card_cont_link::before {
+    position: absolute;
+    content: "";
+    background-color: #252E8D;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+}
+
+._housiko_myproduct_card_bottm {
+    margin-bottom: 30px;
+}
+
+._housiko_myproduct_card_wrap {
+    padding-bottom: 60px;
+}
+
+._housiko_myproduct_r8_card_txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+._housiko_myproduct_r8_card_txt_sp {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 30px;
+    margin: 0 10px 0 0;
+}
+
+._housiko_myproduct_r8_card_txt_icon {
+    width: 15px;
+}
+
+._housiko_myproduct_r8_card_txt1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+._housiko_myproduct_r8_card_txt1_sp {
+    margin: 0 0 0 4px;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+._housiko_myproduct_r8_card_box {
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+._housiko_myproduct_r8_card_box_width1 {
+    width: 168px;
+    height: 194px;
+}
+
+._housiko_myproduct_r8_card_box_width2 {
+    width: 132px;
+    height: 194px;
+}
+
+._housiko_myproduct_r8_card_box_width3 {
+    width: 118px;
+    height: 194px;
+}
+
+._housiko_myproduct_r8_card_box._housiko_myproduct_r8_card_box_width3._width3_padding_top {
+    padding-top: 28px;
+}
+
+._housiko_myproduct_r8_card_box_btn {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+    background: #FFBF00;
+    border-radius: 6px;
+    width: 146px;
+    height: 33px;
+    transition: .2s all ease-in-out;
+}
+
+._housiko_myproduct_r8_card_box_btn:hover {
+    background: #e2ad0d;
+}
+
+._housiko_myproduct_r8_cards {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+._housiko_myproduct_r8_card {
+    margin: 0 16px 0 0;
+}
+
+.myproduct_toggle {
+    margin: 0 0 26px !important;
+}
+
+._housiko_list_prop_para {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 20px 0;
+}
+
+._housiko_myproduct_left_card_buy_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 32px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #FFFFFF !important;
+    background: #252E8D;
+    border-radius: 6px;
+    transition: .2s all ease-in-out;
+}
+
+._housiko_myproduct_left_card_buy_link:hover {
+    background: #0a1268;
+}
+
+._housiko_myproduct_r8_card_box_select {
+    margin-bottom: 15px;
+}
+
+._housiko_myproduct_r8_card_box_select .ant-select {
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+}
+
+._housiko_myproduct_r8_card_box_select .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #ECECEC;
+    border-radius: 20px;
+}
+
+._housiko_myproduct_r8_card_box_select._housiko_myproduct_r8_card_box_select_width1 .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    width: 109px;
+    height: 27px;
+}
+
+._housiko_myproduct_r8_card_box_select .ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    line-height: 24px;
+}
+
+._housiko_myproduct_left_card_cont_preview_link {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #252E8D !important;
+    display: inline-block;
+    transition: .2s all ease-in-out;
+    padding-top: 8px;
+}
+
+._housiko_myproduct_r8_card_box_select._housiko_myproduct_r8_card_box_select_width2 .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    width: 156px;
+    height: 27px;
+}
+
+._housiko_myproduct_r8_card_box_width4 {
+    width: 191px;
+    height: 194px;
+}
+
+.products_come {
+    position: relative;
+}
+
+._housiko_myads_btn.products_come ._housiko_list_prop_main_tab_come_box {
+    bottom: -16px;
+    top: auto;
+}
+
+/* My Product */
+
+
+/* My Discard */
+
+._housiko_myrejectAdvert_card_left_undo_btn {
+    border: 1px solid rgba(85, 85, 85, 0.4) !important;
+    border-radius: 6px;
+    background: transparent;
+    width: 157px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000 !important;
+}
+
+._housiko_myrejectAdvert_card_left_undo_btn svg {
+    margin: 0 11px 0 0;
+}
+
+._housiko_myrejectAdvert_card_left_undo_btn:hover {
+    border-color: transparent !important;
+    background: rgba(85, 85, 85, 0.6);
+    color: #fff !important;
+}
+
+._housiko_myrejectAdvert_card_left_undo_btn:hover svg path {
+    fill: #fff;
+}
+
+._housiko_listing_card_item_content_txt_first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* My Discard */
+
+/* My Messages */
+._housiko_mymessage_cards {
+    padding-bottom: 80px;
+}
+
+._housiko_mymessage_card {
+    overflow-y: scroll;
+    max-height: 430px;
+    padding: 0 4px 0 0;
+}
+
+._housiko_mymessage_card_item {
+    display: flex;
+    gap: 0;
+    border-radius: 10px;
+    margin: 0 0 24px 0;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    background: #fff;
+}
+
+._housiko_mymessage_card_item_active {
+    background: #DADADA;
+    box-shadow: none;
+}
+
+/* width */
+._housiko_mymessage_card::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+._housiko_mymessage_card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #252E8D;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(91, 94, 98);
+}
+
+
+._housiko_mymessage_card_item_img_content {
+    flex: 0 0 140px;
+    width: 140px;
+    max-width: 140px;
+    position: relative;
+}
+
+._housiko_mymessage_card_item_content_bottom {
+    padding: 5px 0 0 16px;
+}
+
+._housiko_mymessage_search_wrapper {
+    margin-bottom: 12px;
+}
+
+._housiko_mymessage_card_item_img_txt {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+
+._housiko_mymessage_card_item_img_txt1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #555555;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: -moz-fit-content;
+    padding: 4px 6px;
+}
+
+._housiko_mymessage_card_bottm_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 10px;
+}
+
+._housiko_mymessage_card_bottm_share_btn {
+    border: 1px solid #999999 !important;
+    border-radius: 6px;
+    width: 195px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    background-color: transparent !important;
+}
+
+._housiko_mymessage_card_bottm_share_btn:hover {
+    border-color: transparent !important;
+    background-color: #5858c6 !important;
+    color: #fff;
+}
+
+._housiko_mymessage_card_bottm_block_btn {
+    border: 1px solid #999999 !important;
+    border-radius: 6px;
+    width: 64px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    background-color: transparent !important;
+}
+
+._housiko_mymessage_card_bottm_block_btn:hover {
+    border-color: transparent !important;
+    background-color: #5858c6 !important;
+    color: #fff;
+}
+
+._housiko_mymessage_r8_message_box_prof_img {
+    position: relative;
+}
+
+._housiko_mymessage_r8_message_box_prof_img_tag {
+    width: 64px;
+}
+
+._housiko_mymessage_r8_message_box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    max-height: 472px;
+    height: 472px;
+    overflow: hidden;
+}
+
+._housiko_mymessage_r8_message_box_prof {
+    flex: 0 0 113px;
+    width: 113px;
+    max-width: 113px;
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 470px;
+    height: 470px;
+}
+
+._housiko_mymessage_r8_message_box_user_prof,
+._housiko_mymessage_r8_message_box_friend_prof {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 16px;
+}
+
+._housiko_mymessage_r8_message_box_user_prof {
+    margin-bottom: 8px;
+}
+
+._housiko_mymessage_r8_message_box_friend_prof {
+    margin-bottom: 16px;
+}
+
+._housiko_mymessage_r8_message_box_friend_prof:last-child {
+    border-bottom-color: transparent;
+}
+
+._housiko_mymessage_r8_message_box_friend_prof_img {
+    width: 40px;
+}
+
+._housiko_mymessage_r8_message_box_prof_active {
+    position: absolute;
+    top: 0;
+    right: 29px;
+}
+
+._housiko_mymessage_r8_message_box_friend_active {
+    position: absolute;
+    top: 0;
+    right: 34px;
+}
+
+._housiko_mymessage_r8_message_box_prof_cont {
+    margin-top: 7px;
+}
+
+._housiko_mymessage_r8_message_box_prof_cont_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+._housiko_mymessage_r8_message_box_prof_cont_add_btn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background: transparent !important;
+}
+
+._housiko_mymessage_r8_message_box_prof_cont_add_btn_sp {
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 30px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_mymessage_r8_message_box_coments {
+    flex: 1 1;
+    padding: 30px;
+    overflow-y: scroll;
+    max-height: 470px;
+    height: 470px;
+    position: relative;
+    background-color: #DADADA;
+    border-radius: 0 10px 10px 0;
+}
+
+._housiko_mymessage_r8_message_box_full_lg {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+}
+
+._housiko_mymessage_r8_message_box_full_lg_btn {
+    background: transparent !important;
+}
+
+._housiko_mymessage_r8_message_box_coment {
+    margin: 0 0 30px;
+}
+
+._housiko_mymessage_r8_message_box_sender_coment {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 51%;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 10px;
+}
+
+._housiko_mymessage_r8_message_box_sender_coment_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+._housiko_mymessage_r8_message_box_receiver_coment {
+    background: #D3D5E8;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 61%;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
+}
+
+._housiko_mymessage_r8_message_box_receiver_coment_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #252E8D;
+}
+
+._housiko_mymessage_r8_message_box_replay {
+    margin-bottom: 10px;
+}
+
+._housiko_mymessage_r8_message_box_replay_form {
+    width: auto;
+    position: relative;
+}
+
+._housiko_mymessage_r8_message_box_replay_form_inpt {
+    border: 1px solid #555555;
+    border-radius: 10px;
+    background: #FFFFFF;
+    height: 48px;
+    width: 100%;
+    padding: 0 116px 0 16px;
+    color: #000;
+    transition: .2s all ease-in-out;
+    outline: 0;
+}
+
+._housiko_mymessage_r8_message_box_replay_form_inpt::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+._housiko_mymessage_r8_message_box_replay_form_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #252E8D;
+    border-radius: 10px;
+    width: 105px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF !important;
+}
+
+._housiko_mymessage_r8_message_box_replay_form_btn:hover {
+    background: #0a1268;
+}
+
+._housiko_mymessage_card_bottm {
+    border-top: 1px solid #ECECEC;
+    padding-top: 16px;
+    margin-top: 28px;
+}
+
+._housiko_mymessage_tabs_btn .ant-tabs-nav {
+    background: #F4F5F9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 49px;
+    margin: 0 auto 40px;
+    padding: 0 8px;
+}
+
+._housiko_mymessage_tabs_btn .ant-tabs {
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_mymessage_tabs_btn .ant-tabs.ant-tabs-top._housiko_mymessage_btns_wrap>.ant-tabs-nav,
+.ant-tabs-bottom>.ant-tabs-nav,
+.ant-tabs-top>div>.ant-tabs-nav,
+.ant-tabs-bottom>div>.ant-tabs-nav {
+    margin: 0;
+}
+
+._housiko_mymessage_btns_wrap .ant-tabs-nav-wrap {
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_mymessage_btns_wrap .ant-tabs-nav,
+._housiko_mymessage_btns_wrap .ant-tabs-content-holder {
+    width: 100%;
+}
+
+.ant-tabs.ant-tabs-top._housiko_mymessage_tabs_btn .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #fff;
+    text-shadow: none;
+    background: #252E8D;
+}
+
+._housiko_mymessage_tabs_btn .ant-tabs-tab-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.ant-tabs-tab+.ant-tabs-tab {
+    margin: 0 0 0 10px;
+}
+
+._housiko_mymessage_btns_wrap .ant-tabs>.ant-tabs-nav .ant-tabs-nav-wrap,
+.ant-tabs>div>.ant-tabs-nav .ant-tabs-nav-wrap {
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_mymessage_received_btn,
+._housiko_mymessage_sent_btn {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000000;
+    background: transparent;
+    border-radius: 4px;
+}
+
+._active_mymessage_btn {
+    background: #252E8D;
+}
+
+._housiko_mymessage_received_btn._active_mymessage_btn {
+    color: #fff;
+}
+
+._housiko_mymessage_card_item_message_count {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #A32C2C;
+    position: relative;
+}
+
+._housiko_mymessage_card_item_message_count_active {
+    position: absolute;
+    background: #A32C2C;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    left: -40%;
+    transform: translate(-50%, -50%);
+}
+
+._housiko_mymessage_friend_message_count {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #A32C2C;
+    position: absolute;
+    top: 0;
+    left: 11px;
+}
+
+._housiko_mymessage_friend_message_count_active {
+    position: absolute;
+    background: #A32C2C;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    left: -10px;
+    transform: translate(0, -50%);
+}
+
+._housiko_mymessage_r8_message_sent_box {
+    margin-bottom: 12px;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    max-height: 472px;
+    height: 472px;
+    overflow: hidden;
+}
+
+._housiko_mymessage_r8_message_sent_box_comments {
+    flex: 1 1;
+    padding: 30px;
+    overflow-y: scroll;
+    max-height: 470px;
+    height: 470px;
+    position: relative;
+    background-color: #DADADA;
+    border-radius: 10px;
+}
+
+._housiko_mymessage_r8_message_send_box_receiver_coment {
+    background: #D3D5E8;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
+}
+
+/* My Messages */
+
+/* profile ddropdown */
+
+.ant-dropdown-trigger._housiko_profile_nav_dropdown_main._housiko_profile_nav_dropdown {
+    background: #252E8D;
+    border-radius: 6px;
+    width: 110px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 0 10px
+}
+
+._housiko_profile_nav_dropdown_main_ic {
+    flex: 0 0 24px;
+    width: 24px;
+    max-width: 24px;
+    position: relative;
+}
+
+._housiko_profile_nav_dropdown_main_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+._active_prof {
+    position: relative;
+}
+
+._active_prof ._housiko_mymessage_r8_message_box_prof_active {
+    top: -9px;
+    right: 0;
+}
+
+._housiko_profile_nav_dropdown_main_plus_box {
+    background: #FFBF00;
+    border-radius: 2px;
+    width: 44px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_profile_nav_dropdown_main_plus_box_cont {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+._dropdown_profile_button.products_come ._housiko_list_prop_main_tab_come_box {
+    top: 50%;
+    right: -70px;
+    transform: translate(0, -50%);
+    left: auto;
+}
+
+._dropdown_profile_info_btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+._dropdown_profile_info_btn_link {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #252E8D;
+    position: relative;
+    transition: .2s all ease-in-out;
+}
+
+._plus_box_space {
+    margin-bottom: 4px;
+}
+
+._dropdown_profile_info_btn_link::before {
+    position: absolute;
+    content: "";
+    background-color: #252E8D;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    transition: .2s all ease-in-out;
+}
+
+._dropdown_profile_info_btn_link:hover::before {
+    width: 0;
+}
+
+/* profile ddropdown */
+
+._dropdown_profile_wrap {
+    width: 298px;
+    max-width: 4298px;
+    padding: 24px 24px 19px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+._dropdown_print_wrap {
+    width: 100px;
+    max-width: 100px;
+    padding: 10px;
+}
+
+._nav_dropdown_profile_wrap {
+    max-width: 132px;
+    padding: 12px;
+}
+
+._nav_dropdown_profile_wrap ._dropdown_profile_buttons {
+    padding: 0;
+}
+
+._nav_dropdown_profile_wrap ._dropdown_profile_button_list {
+    padding: 4px 0;
+    margin: 0 0 4px;
+    transition: .2s all ease;
+}
+
+._nav_dropdown_profile_wrap ._dropdown_profile_button_list:hover {
+    background-color: #efefffef;
+}
+
+._nav_dropdown_profile_wrap ._dropdown_profile_button {
+    width: 100%;
+}
+
+._dropdown_profile_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+._dropdown_profile_info_select {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+._dropdown_profile_info_select_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252E8D;
+    position: relative;
+    width: 100%;
+}
+
+._dropdown_profile_info_select_txt span {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #30B742;
+    right: 8px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+._dropdown_profile_info_select .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid transparent !important;
+}
+
+._dropdown_profile_info_select .ant-select {
+    padding: 0;
+    color: #252E8D;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 17px;
+    outline: 0 !important;
+}
+
+._dropdown_profile_info_select .ant-select-selection-item {
+    font-weight: 700;
+}
+
+._dropdown_profile_info_select .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    padding: 0 17px 0 3px;
+}
+
+._dropdown_profile_info_btn ._housiko_myads_change_btn_box {
+    margin: 0 0 0 auto;
+}
+
+._dropdown_profile_info_mail_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #555555;
+}
+
+._dropdown_profile_buttons {
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    padding: 16px 0 20px;
+}
+
+._dropdown_profile_button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+._dropdown_profile_button_list {
+    margin-bottom: 16px;
+}
+
+._dropdown_profile_button_list:last-child {
+    margin-bottom: 0;
+}
+
+._dropdown_profile_button_ic {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 16px 0 0;
+}
+
+._dropdown_profile_logout_button_tag {
+    background: transparent;
+}
+
+._dropdown_profile_logout_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+._dropdown_profile_logout_button_ic {
+    margin: 0 16px 0 0;
+}
+
+._navbar_btn3_discard {
+    width: 165px;
+}
+
+._navbar_btn3_discard .ant-select.ant-select-single.ant-select-show-arrow {
+    width: 165px !important;
+}
+
+/* Myprofile */
+._housiko_myprofile_wrap {
+    margin-bottom: 12px;
+}
+
+._housiko_myprofile_tab {
+    padding: 15px 0 40px;
+    width: 424px;
+    margin: auto;
+}
+
+._housiko_myprofile_tab_txt {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-bottom: 17px;
+}
+
+._housiko_myprofile_tab_parsonal_info_pics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 18px;
+}
+
+._housiko_myprofile_tab_parsonal_info_pic {
+    cursor: pointer;
+}
+
+._housiko_myprofile_tab_parsonal_info_pic_tag {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 74px;
+    flex: 0 0 74px;
+}
+
+._housiko_profile_no_image {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    max-width: 74px;
+    flex: 0 0 74px;
+    background-color: #252E8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+._profilepic_upload_input {
+    display: none;
+}
+
+._housiko_myprofile_tab_parsonal_info_name {
+    margin: 0 0 8px;
+}
+
+._housiko_myprofile_tab_parsonal_info_name,
+._housiko_myprofile_tab_parsonal_info_email {
+    display: flex;
+    align-items: center;
+}
+
+._housiko_myprofile_tab_parsonal_info_name_txt._housiko_parsonal_txt {
+    width: 108px;
+}
+
+._housiko_myprofile_tab_parsonal_info_name_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_myprofile_tab_parsonal_info_name_inpt {
+    border: 0;
+    outline: 0;
+    background: transparent !important;
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1;
+}
+
+._housiko_myprofile_tab_parsonal_info_name_inpt::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_myprofile_tab_parsonal_info_email {
+    margin: 0 0 12px;
+}
+
+._housiko_myprofile_tab_parsonal_info_link_tag {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252E8D !important;
+}
+
+._housiko_myprofile_tab_parsonal_info_link_tag:hover {
+    color: #555555 !important;
+}
+
+._housiko_myprofile_tab_parsonal_info {
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_para {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-bottom: 18px;
+}
+
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt {
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+    width: 236px;
+    height: 48px;
+    padding: 0 16px;
+    color: #000 !important;
+    transition: .2s all ease-in-out;
+    outline: 0;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt_btn {
+    background: #252E8D;
+    border-radius: 6px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt_btn:hover {
+    background: #2430b1;
+}
+
+._housiko_myprofile_tab_parsonal_info_conts {
+    padding-top: 24px;
+}
+
+._housiko_myprofile_tab_parsonal_info_checkbox_txt {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+._housiko_myprofile_tab_parsonal_info_checkbox_para {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #555555;
+}
+
+._housiko_myprofile_tab_parsonal_info_checkbox .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: transparent !important;
+    border-color: #252E8D;
+}
+
+._housiko_myprofile_tab_parsonal_info_checkbox .ant-checkbox-checked .ant-checkbox-inner::after {
+    border: 2px solid #252E8D;
+    border-top: 0;
+    border-left: 0;
+}
+
+.ant-checkbox-wrapper._housiko_myprofile_tab_parsonal_info_checkbox {
+    margin: 0 0 20px;
+}
+
+._housiko_myprofile_tab_parsonal_info_conts .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+    margin-left: 0;
+}
+
+._housiko_myprofile_tab_parsonal_info_margin {
+    padding-bottom: 8px;
+}
+
+._housiko_myprofile_tab_parsonal_info_conts_btn {
+    margin-top: 8px;
+}
+
+._housiko_myprofile_tab_parsonal_info_conts_border_btn {
+    padding-top: 22px;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt_btn._myprofile_border_btn {
+    background: transparent;
+    border: 1px solid #252E8D !important;
+    color: #252E8D;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt_btn._myprofile_border_btn:hover {
+    background: #252E8D;
+    border-color: transparent !important;
+    color: #fff;
+}
+
+._housiko_myprofile_tab_parsonal_bottm_para {
+    padding: 8px 0 22px;
+}
+
+._housiko_myprofile_tab_parsonal_info_checkbox_para_width {
+    max-width: 73%;
+}
+
+
+._housiko_myprofile_tab_parsonal_info_conts_bottm_border_btn {
+    padding-top: 12px;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt_btn._myprofile_bottm_border_btn {
+    background: transparent;
+    border: 1px solid rgba(37, 46, 141, 0.3) !important;
+    color: rgba(37, 46, 141, 0.3);
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_inpt_btn._myprofile_bottm_border_btn:hover {
+    border: 1px solid rgba(37, 46, 141, 0.8) !important;
+    color: rgba(37, 46, 141, 0.8);
+}
+
+
+._housiko_myprofile_select_language {
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._country_select_wrap {
+    min-width: 320px !important;
+    width: auto !important;
+    padding: 4px 14px 16px !important;
+    /* display: block !important; */
+}
+
+._searchbar_wrap {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+._searchbar_input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #adadad;
+    padding: 10px 0;
+    padding-right: 14px;
+    padding-left: 32px !important;
+    box-shadow: none !important;
+}
+
+._search_ic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+._country_list_item {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+._country_list_item_inner_ic {
+    flex: 1 1;
+    display: flex;
+    gap: 0 10px;
+}
+
+._country_list_item_inner_txt {
+    flex: 1 1;
+
+}
+
+._housiko_myprofile_select_language {
+    height: auto;
+    padding: 11px 0;
+}
+
+._country_select_wrap .ant-select-item-option {
+    display: flex;
+    border-bottom: 1px solid #a0a0a055;
+    margin: 0 0 8px;
+}
+
+._housiko_myprofile_select_language .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: transparent;
+    border-radius: 0;
+}
+
+._housiko_myprofile_select_language .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 0;
+    box-shadow: none !important;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_form ._housiko_myprofile_tab_parsonal_info_link {
+    margin: 16px 0;
+}
+
+._housiko_myprofile_tab_parsonal_info_mobile_form_inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+._select_language_wd1 {
+    width: 82px;
+}
+
+._select_language_wd1 .ant-select-selection-item {
+    display: flex;
+    align-items: center;
+}
+
+._select_language_wd2 {
+    /* width: 90px; */
+    /* width: 120px; */
+}
+
+._select_language_wd2 ._country_list_item_inner_txt {
+    display: none !important;
+}
+
+._housiko_myprofile_select_language._select_language_wd2 ._navbar_btn3_flag_wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 10px 0 0;
+    gap: 0 8px;
+}
+
+._navbar_btn3_flag_txt {
+    display: inline-flex;
+    line-height: 24px !important;
+}
+
+._housiko_myprofile_select_language .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 24px;
+}
+
+._select_language_spoken_wd1 {
+    width: 200px;
+}
+
+._housiko_myprofile_language_spoken {
+    margin-top: 28px;
+}
+
+._housiko_myprofile_language_spoken_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+._housiko_myprofile_select_lan_spoken {
+    border: 1px solid #ECECEC;
+    border-radius: 6px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._housiko_myprofile_select_lan_spoken .ant-select-selection-item {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+._housiko_myprofile_select_lan_spoken .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 0;
+    box-shadow: none !important;
+}
+
+._housiko_myprofile_select_lan_spoken .ant-select {
+    width: 100%;
+}
+
+._housiko_myprofile_select_lan_spoken .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: transparent;
+    box-shadow: none;
+    border-right-width: 0;
+    outline: 0;
+}
+
+._housiko_myprofile_language_spoken_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+._housiko_myprofile_currency {
+    margin: 24px 0;
+}
+
+._profile_pic_dropdown_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    border-radius: 6px;
+    gap: 0 8px;
+    border: 1px solid #252E8D !important;
+    background: #fff;
+    cursor: pointer;
+}
+
+._profile_pic_dropdown {
+    min-width: 322px;
+    padding: 16px 16px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+}
+
+._profile_pic_dropdown_inner {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+}
+
+._profile_pic_dropdown_btn2 {
+    background: #252E8D;
+    color: #fff;
+    border: 1px solid #252E8D !important;
+}
+
+._profile_pic_dropdown_btn2 ._profile_pic_dropdown_btn_ic svg path {
+    fill: #fff;
+}
+
+._profile_pic_dropdown_btn2 ._profile_pic_dropdown_btn_ic svg rect {
+    stroke: #fff;
+}
+
+._profile_pic_dropdown_btn2:hover ._profile_pic_dropdown_btn_ic svg path {
+    fill: #252E8D;
+}
+
+._profile_pic_dropdown_btn2:hover ._profile_pic_dropdown_btn_ic svg rect {
+    stroke: #252E8D;
+}
+
+._profile_pic_dropdown_btn2:hover {
+    background: #fff;
+}
+
+._profile_pic_dropdown_btn2:hover ._profile_pic_dropdown_btn_txt {
+    color: #252E8D;
+}
+
+._profile_pic_dropdown_btn_ic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+._profile_pic_dropdown_btn_txt {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+._profile_pic_dropdown_btn2 ._profile_pic_dropdown_btn_txt {
+    color: #fff;
+}
+
+._editinfo_modal_wrap .ant-btn.ant-btn-primary {
+    background-color: #252E8D !important;
+}
+
+/* Myprofile */
+
+/* discarded averd */
+._housiko_discard_card_item_content_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 4px 10px;
+}
+
+/* discarded averd */
