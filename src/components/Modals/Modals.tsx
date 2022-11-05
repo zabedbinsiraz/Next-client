@@ -1,15 +1,36 @@
-import { Checkbox, Input, Modal, Select } from "antd";
+import { Button, Checkbox, Form, Input, Modal, Select } from "antd";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 import { SvgIcon } from "../Design/SvgIcon";
 
 import SingleListing from "../../pages/SingleListing/SingleListing";
+import callApi from "../../utils/axios/useAPI";
 
 const { Option } = Select;
 const { TextArea } = Input;
 
 export const LoginModal = ({ open, cancel, showCreate }: any) => {
+  const router = useRouter();
+  //login credentials
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLoginForm = async (e) => {
+    e.preventDefault();
+    const loginDetails = { email, password };
+
+    try {
+      const { data } = await callApi("api/auth/login", "post", loginDetails);
+      if (data) {
+        cancel();
+        router.push("/");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <div className="_login_modal_wrapper">
@@ -24,24 +45,61 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
           closeIcon={<SvgIcon iconType={"close"} w={14} h={14} />}
           width={424}
         >
-          <Input placeholder="Email*" className="_login_input" />
-          <Input placeholder="Password*" className="_login_input" />
-          <div className="_login_forgot_wrap">
-            <div className="_login_remember_check">
-              <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                Remember me
-              </Checkbox>
+          <Form onFinish={handleLoginForm}>
+            <Form.Item
+              name="email"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your email",
+                },
+              ]}
+            >
+              <Input
+                placeholder="Email*"
+                className="_login_input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Item>
+
+            <Form.Item
+              name="password"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your password",
+                },
+              ]}
+            >
+              <Input
+                placeholder="Password*"
+                className="_login_input"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Item>
+
+            <div className="_login_forgot_wrap">
+              <div className="_login_remember_check">
+                <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
+                  Remember me
+                </Checkbox>
+              </div>
+              <a href="#0" className="_login_forgot_link">
+                Forgot password?
+              </a>
             </div>
-            <a href="#0" className="_login_forgot_link">
-              Forgot password?
-            </a>
-          </div>
-          <div className="_login_submit_wrap">
-            <button className="_login_submit_btn">Submit</button>
-            <button onClick={showCreate} className="_login_submit_txt">
-              Dont’t have an account yet?
-            </button>
-          </div>
+            <div className="_login_submit_wrap">
+              <Button htmlType="submit" className="_login_submit_btn">
+                Submit{" "}
+              </Button>
+
+              <Button onClick={showCreate} className="_login_submit_txt">
+                Dont’t have an account yet?
+              </Button>
+            </div>
+          </Form>
           <div className="_login_or_wrap">
             <p className="_login_or_txt">Or</p>
           </div>
