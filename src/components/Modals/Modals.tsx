@@ -146,19 +146,21 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
 
 export const CreateAccount = ({ open, cancel }: any) => {
   const router = useRouter();
-
+  const [isAgency, setIsAgency] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSignUpForm = async () => {
-    const userSignUpDetails = { fullName, email, password };
+  const onChange = (e) => {
+    setIsAgency(e.target.checked);
+  };
+
+  const handleSignUpForm = async (e) => {
+    e.password_confirmation = e.password;
+    e.is_agency = isAgency;
+    // userSignUpDetails.password_confirm = password;
     try {
-      const { data } = await callApi(
-        "api/auth/register",
-        "post",
-        userSignUpDetails
-      );
+      const { data } = await callApi("api/auth/register", "post", e);
       if (data) {
         cancel();
         router.push("/");
@@ -182,7 +184,10 @@ export const CreateAccount = ({ open, cancel }: any) => {
         width={424}
       >
         <div className="_login_remember_check _create_professional">
-          <Checkbox className=" _create_professional_checkbox ">
+          <Checkbox
+            className=" _create_professional_checkbox"
+            onChange={onChange}
+          >
             I am a professional agency
           </Checkbox>
         </div>

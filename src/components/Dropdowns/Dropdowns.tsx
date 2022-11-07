@@ -78,6 +78,7 @@ export const TotalRoomDropdown = () => {
       </>
     );
   };
+
   return (
     <Dropdown
       className="_housiko_listing_nav_dropdown _housiko_listing_floor_nav_dropdown"
@@ -254,7 +255,7 @@ export const TypeDropdown = () => {
         <div className="_dropdown_price_wrap _dropdown_type_wrap">
           <div className="_dropdown_price_inner _dropdown_type_inner _dropdown_type">
             <div className="_dropdown_type_content">
-              <h4 className="_dropdown_price_title">Type of Contraction</h4>
+              <h4 className="_dropdown_price_title">Type of Construction</h4>
               <div className="_dropdown_type_content_ul_wrap">
                 <ul className="_dropdown_type_content_ul">
                   <li className="_dropdown_type_content_li">
