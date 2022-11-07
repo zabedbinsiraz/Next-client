@@ -26,10 +26,24 @@ const ListProperty = () => {
     setBathRooms,
     setBedRooms,
     setPropertyExtras,
+    setAlsoRentIt,
+    alsoRentIt,
+    fromOwner,
+    setFromOwner,
+    setHomeType,
   } = useProperty();
 
   const handelUseDifferent = () => {
     setUseDifferent(!useDifferent);
+  };
+
+  const handleRentPrice = (checked) => {
+    setAlsoRentIt(checked);
+    setShowRentPrice(!showRentPrice);
+  };
+
+  const handleFromOwner = (checked) => {
+    setFromOwner(checked);
   };
 
   return (
@@ -163,7 +177,7 @@ const ListProperty = () => {
                         <ul className="_housiko_list_prop_toggle_btn_ul">
                           <li className="_housiko_list_prop_toggle_btn_li">
                             <Switch
-                              onChange={() => setShowRentPrice(!showRentPrice)}
+                              onChange={handleRentPrice}
                               className="_housiko_list_prop_toggle_btn"
                             />
                             <span className="_housiko_list_prop_toggle_btn_txt">
@@ -171,7 +185,10 @@ const ListProperty = () => {
                             </span>
                           </li>
                           <li className="_housiko_list_prop_toggle_btn_li">
-                            <Switch className="_housiko_list_prop_toggle_btn" />
+                            <Switch
+                              className="_housiko_list_prop_toggle_btn"
+                              onChange={handleFromOwner}
+                            />
                             <span className="_housiko_list_prop_toggle_btn_txt">
                               Directly from owner
                             </span>
@@ -183,6 +200,7 @@ const ListProperty = () => {
                   <Form form={form} onFinish={onFinish}>
                     <BasicCharacteristics
                       showRentPrice={showRentPrice}
+                      setHomeType={setHomeType}
                       setRoomValue={setRoomValue}
                       setHalfRoomValue={setHalfRoomValue}
                     />

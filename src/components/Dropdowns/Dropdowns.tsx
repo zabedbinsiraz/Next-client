@@ -204,9 +204,16 @@ export const FloorDropdown = () => {
 };
 // Type Dropdown
 
-export const TypeDropdown = () => {
+export const TypeDropdown = ({
+  setHomeType,
+  showTypeDropDown,
+  setShowTypeDropDown,
+}) => {
   const [typeArr, setTypeArr] = useState<any[]>([]);
+  const [home, setHome] = useState("");
+  const [open, setOpen] = useState(false);
 
+  const handleOpenChange = () => {};
   function checkHandler(e: any) {
     let val = e.target.value;
 
@@ -222,6 +229,14 @@ export const TypeDropdown = () => {
     }
   }
 
+  const onHomeChange = (checkedValues) => {
+    setHome(checkedValues);
+  };
+
+  const handleHomeApply = () => {
+    setHomeType(home);
+  };
+
   const [counts, setCounts] = useState(0);
 
   useEffect(() => {
@@ -229,23 +244,21 @@ export const TypeDropdown = () => {
   }, [typeArr, counts]);
 
   const data: any = {
-    "All flats": [
-      { id: 1, label: "Intermediate Floors", value: "sub-type-1" },
-      { id: 2, label: "Apartment", value: "sub-type-2" },
-      { id: 3, label: "Penthouse", value: "sub-type-3" },
-      { id: 4, label: "Duplex apartment", value: "sub-type-4" },
-      { id: 5, label: "Loft", value: "sub-type-5" },
-      { id: 6, label: "Ground floor", value: "sub-type-6" },
-      { id: 7, label: "Studio", value: "sub-type-7" },
-    ],
-    "All houses": [
-      { id: 8, label: "House or chalet", value: "sub-type-1" },
-      { id: 9, label: "Rural property", value: "sub-type-2" },
-      { id: 10, label: "Penthouse", value: "sub-type-3" },
-      { id: 11, label: "Single-family semi-detached", value: "sub-type-4" },
-      { id: 12, label: "Loft", value: "sub-type-5" },
-      { id: 13, label: "Ground floor", value: "sub-type-6" },
-      { id: 14, label: "Studio", value: "sub-type-7" },
+    AllFlats: [
+      { id: 1, label: "Intermediate Floors", value: "Intermediate Floors" },
+      { id: 2, label: "Apartment", value: "Apartment" },
+      { id: 3, label: "Penthouse", value: "Penthouse" },
+      { id: 4, label: "Duplex apartment", value: "Duplex apartment" },
+      { id: 5, label: "Loft", value: "Loft" },
+      { id: 6, label: "Ground floor", value: "Ground floor" },
+      { id: 7, label: "Studio", value: "Studio" },
+      { id: 8, label: "House or chalet", value: "House or chalet" },
+      { id: 9, label: "Rural property", value: "Rural property" },
+      {
+        id: 11,
+        label: "Single-family semi-detached",
+        value: "Single-family semi-detached",
+      },
     ],
   };
 
@@ -255,216 +268,40 @@ export const TypeDropdown = () => {
         <div className="_dropdown_price_wrap _dropdown_type_wrap">
           <div className="_dropdown_price_inner _dropdown_type_inner _dropdown_type">
             <div className="_dropdown_type_content">
-              <h4 className="_dropdown_price_title">Type of Construction</h4>
-              <div className="_dropdown_type_content_ul_wrap">
-                <ul className="_dropdown_type_content_ul">
-                  <li className="_dropdown_type_content_li">
-                    <Checkbox
-                      checked
-                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
-                    >
-                      <span className="_login_input_label_txt">
-                        All constuctions
-                      </span>
-                    </Checkbox>
-                  </li>
-                  <li className="_dropdown_type_content_li">
-                    <ul className="_dropdown_type_content_ul_in">
-                      <li className="_dropdown_type_content_li _dropdown_type_content_li_in">
-                        <Checkbox
-                          checked
-                          className="_login_input_check _city_input_check_login_input_check _login_input_label"
-                        >
-                          <span className="_login_input_label_txt">
-                            Second hand
-                          </span>
-                        </Checkbox>
-                      </li>
-                      <li className="_dropdown_type_content_li_in">
-                        <Checkbox
-                          checked
-                          className="_login_input_check _city_input_check_login_input_check _login_input_label"
-                        >
-                          <span className="_login_input_label_txt">
-                            New Contruction
-                          </span>
-                        </Checkbox>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* <div className="_dropdown_type_content">
-                            <h4 className="_dropdown_price_title">
-                                Type of home
-                            </h4>
-                            <div className="_dropdown_type_content_ul_wrap">
-                                <ul className="_dropdown_type_content_ul">
-                                    <li className="_dropdown_type_content_li">
-                                        <Checkbox className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                            <span className="_login_input_label_txt">
-                                                All flats
-                                            </span>
-                                        </Checkbox>
-                                    </li>
-                                    <li className="_dropdown_type_content_li">
-                                        <ul className="_dropdown_type_content_ul_in">
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Intermediate Floors" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Intermediate Floors
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Apartment" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Apartment
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Penthouse" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Penthouse
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Duplex apartment" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Duplex apartment
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Loft" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Loft
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Ground floor" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Ground floor
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Studio" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Studio
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="_dropdown_type_content_li">
-                                        <Checkbox className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                            <span className="_login_input_label_txt">
-                                                All houses
-                                            </span>
-                                        </Checkbox>
-                                    </li>
-                                    <li className="_dropdown_type_content_li">
-                                        <ul className="_dropdown_type_content_ul_in">
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="House or chalet" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        House or chalet
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Rural property" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Rural property
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Penthouse" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Penthouse
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Single-family" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Single-family
-                                                        <br />
-                                                        semi-detached
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Loft" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Loft
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Ground floor" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Ground floor
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                            <li className="_dropdown_type_content_li_in">
-                                                <Checkbox value="Studio" onChange={checkHandler} className='_login_input_check _city_input_check_login_input_check _login_input_label'>
-                                                    <span className="_login_input_label_txt">
-                                                        Studio
-                                                    </span>
-                                                </Checkbox>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> */}
-            <div className="_dropdown_type_content">
               <h4 className="_dropdown_price_title">Type of home</h4>
               <div className="_dropdown_type_content_ul_wrap">
                 <ul className="_dropdown_type_content_ul">
-                  {Object.keys(data).map((type) => (
-                    <>
-                      <li className="_dropdown_type_content_li" key={type}>
-                        <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                          <span className="_login_input_label_txt">{type}</span>
-                        </Checkbox>
-                      </li>
+                  <Checkbox.Group onChange={onHomeChange}>
+                    {data.AllFlats.map((type, index) => (
                       <li className="_dropdown_type_content_li">
                         <ul className="_dropdown_type_content_ul_in">
-                          {data[type].map((subType: any) => (
-                            <li
-                              className="_dropdown_type_content_li_in"
-                              key={subType.id}
+                          <li className="_dropdown_type_content_li_in">
+                            <Checkbox
+                              value={type.value}
+                              key={index}
+                              onChange={checkHandler}
+                              className="_login_input_check _city_input_check_login_input_check _login_input_label"
                             >
-                              <Checkbox
-                                value={subType.value}
-                                onChange={checkHandler}
-                                className="_login_input_check _city_input_check_login_input_check _login_input_label"
-                              >
-                                <span className="_login_input_label_txt">
-                                  {subType.label}
-                                </span>
-                              </Checkbox>
-                            </li>
-                          ))}
+                              <span className="_login_input_label_txt">
+                                {type.label}
+                              </span>
+                            </Checkbox>
+                          </li>
                         </ul>
                       </li>
-                    </>
-                  ))}
+                    ))}
+                  </Checkbox.Group>
                 </ul>
               </div>
             </div>
           </div>
           <div className="_dropdown_price_content_btn_wrap">
-            <button className="_dropdown_price_content_btn">Apply</button>
+            <button
+              className="_dropdown_price_content_btn"
+              onClick={handleHomeApply}
+            >
+              Apply
+            </button>
           </div>
         </div>
       </>
@@ -476,8 +313,13 @@ export const TypeDropdown = () => {
         className="_housiko_listing_nav_dropdown"
         overlay={typeDrop}
         trigger={["click"]}
+        onOpenChange={handleOpenChange}
+        open={open}
       >
-        <p className="_housiko_listing_nav_dropdown_txt">
+        <p
+          className="_housiko_listing_nav_dropdown_txt"
+          onClick={() => setShowTypeDropDown(true)}
+        >
           {counts > 0 ? `(${counts})` : ""} Type
           <span className="_housiko_listing_nav_dropdown_ic">
             <SvgIcon iconType={"caret-down"} w={14} h={14} />

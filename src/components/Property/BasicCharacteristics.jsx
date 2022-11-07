@@ -8,10 +8,12 @@ const BasicCharacteristics = ({
   showRentPrice,
   setRoomValue,
   setHalfRoomValue,
+  setHomeType,
 }) => {
   const { Option } = Select;
   const [roomActive, setRoomActive] = useState("1");
   const [halfRoomActive, setHalfRoomActive] = useState("1");
+  const [showTypeDropSown, setShowTypeDropDown] = useState(false);
 
   const handleRoomValue = (e) => {
     setRoomActive(e.target.innerText);
@@ -125,7 +127,11 @@ const BasicCharacteristics = ({
         </label>
         <div className="_housiko_list_prop_characterstics_input_inner">
           <Form.Item name="home_type">
-            <TypeDropdown />
+            <TypeDropdown
+              setHomeType={setHomeType}
+              showTypeDropSown={showTypeDropSown}
+              setShowTypeDropDown={setShowTypeDropDown}
+            />
           </Form.Item>
         </div>
       </div>
