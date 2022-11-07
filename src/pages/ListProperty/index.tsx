@@ -25,6 +25,7 @@ const ListProperty = () => {
     setHalfRoomValue,
     setBathRooms,
     setBedRooms,
+    setPropertyExtras,
   } = useProperty();
 
   const handelUseDifferent = () => {
@@ -190,6 +191,7 @@ const ListProperty = () => {
                       useDifferent={useDifferent}
                       handelUseDifferent={handelUseDifferent}
                       setBedRooms={setBedRooms}
+                      setPropertyExtras={setPropertyExtras}
                       setBathRooms={setBathRooms}
                     />
                     <div className="_housiko_list_prop_finish_wrap d-flex align-items-center justify-content-between">

@@ -1,5 +1,5 @@
 import { Form, Input, Select, Switch, Upload } from "antd";
-import CompoundedSpace from "antd/lib/space";
+
 import { useState } from "react";
 import { SvgIcon } from "../Design/SvgIcon";
 import { TypeDropdown } from "../Dropdowns/Dropdowns";

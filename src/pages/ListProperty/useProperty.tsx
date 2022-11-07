@@ -8,6 +8,7 @@ const useProperty = () => {
   const [roomValue, setRoomValue] = useState("");
   const [bedRooms, setBedRooms] = useState("");
   const [bathRooms, setBathRooms] = useState("");
+  const [propertyExtras, setPropertyExtras] = useState("");
   const [halfRoomValue, setHalfRoomValue] = useState("");
   const [alsoRentIt, setAlsoRentIt] = useState(false);
   const [fromOwner, setFromOwner] = useState(false);
@@ -24,6 +25,7 @@ const useProperty = () => {
     setRoomValue,
     setHalfRoomValue,
     setBedRooms,
+    setPropertyExtras,
     setBathRooms,
   };
 };
