@@ -18,6 +18,7 @@ const useProperty = () => {
   const onFinish = (e) => {
     console.log(e);
     console.log(roomValue);
+    console.log(homeType);
     console.log(halfRoomValue);
     console.log(alsoRentIt);
     console.log(fromOwner);

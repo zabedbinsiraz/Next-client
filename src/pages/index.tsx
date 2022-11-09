@@ -8,12 +8,8 @@ const Home = () => {
   );
 };
 
-// Home.getInitialProps = async (ctx: NextPageContext,store) => {
-//   const { data }: any = await serverApi(ctx, `/`);
-//   return {
-//     data: data,
-//     store:store,
-//   };
+// Home.getInitialProps = async (ctx: NextPageContext ) => {
+
 // };
 
 export default Home;

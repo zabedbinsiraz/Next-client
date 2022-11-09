@@ -205,15 +205,17 @@ export const FloorDropdown = () => {
 // Type Dropdown
 
 export const TypeDropdown = ({
-  setHomeType,
-  showTypeDropDown,
-  setShowTypeDropDown,
+  setHomeType = undefined,
+
+  setShowTypeDropDown = undefined,
 }) => {
   const [typeArr, setTypeArr] = useState<any[]>([]);
   const [home, setHome] = useState("");
   const [open, setOpen] = useState(false);
 
-  const handleOpenChange = () => {};
+  const handleOpenChange = () => {
+    setOpen(true);
+  };
   function checkHandler(e: any) {
     let val = e.target.value;
 
@@ -225,7 +227,6 @@ export const TypeDropdown = ({
       console.log(typeArr, "checked");
     } else {
       console.log(typeArr, "unchecked");
-      // setCounts(typeArr.length);
     }
   }
 
@@ -235,6 +236,7 @@ export const TypeDropdown = ({
 
   const handleHomeApply = () => {
     setHomeType(home);
+    setOpen(false);
   };
 
   const [counts, setCounts] = useState(0);

@@ -3,33 +3,6 @@ import ContactDetails from "./ContactDetails";
 import { useState } from "react";
 import { SvgIcon } from "../Design/SvgIcon";
 
-const countries = [
-  {
-    flag: (
-      <img
-        src="assets/images/engflag.png"
-        alt=""
-        className="_navbar_btn3_flag"
-      />
-    ),
-    countryCode: "+44",
-    countryName: "England",
-    value: "eng",
-  },
-  {
-    flag: (
-      <img
-        src="assets/images/hungflag.png"
-        alt=""
-        className="_navbar_btn3_flag"
-      />
-    ),
-    countryCode: "+32",
-    countryName: "Hungary",
-    value: "hung",
-  },
-];
-
 const Features = ({
   useDifferent,
   handelUseDifferent,
@@ -53,8 +26,20 @@ const Features = ({
     setBathroomActive(e.target.innerText);
   };
 
+  const onStreetChange = (checkedValues) => {
+    console.log(checkedValues);
+  };
+
   const onExtrasChange = (checkedValues) => {
     setPropertyExtras(checkedValues);
+  };
+
+  const onOrientationChange = (checkedValues) => {
+    console.log(checkedValues);
+  };
+
+  const onConservationStatusChange = (checkedValues) => {
+    console.log(checkedValues);
   };
 
   return (
@@ -158,118 +143,181 @@ const Features = ({
           <div className="_housiko_list_prop_feature_inner">
             <div className="_housiko_list_prop_feature_content">
               <h3 className="_housiko_list_prop_feature_content_title">View</h3>
-              <div className="_housiko_list_prop_feature_check_wrap">
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Street
-                  </Checkbox>
+              <Checkbox.Group onChange={onStreetChange}>
+                <div className="_housiko_list_prop_feature_check_wrap">
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Street"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Street
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Danube"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Danube
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Panoramic"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Panoramic
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Balaton"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Balaton
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Courtyard"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Courtyard
+                    </Checkbox>
+                  </div>
                 </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Danube
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Panoramic
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Balaton
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Courtyard
-                  </Checkbox>
+              </Checkbox.Group>
+            </div>
+            <Checkbox.Group onChange={onOrientationChange}>
+              <div className="_housiko_list_prop_feature_content">
+                <h3 className="_housiko_list_prop_feature_content_title">
+                  Orientation
+                </h3>
+                <div className="_housiko_list_prop_feature_check_wrap">
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="North"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      North
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="North East"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      North East
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="East"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      East
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="North West"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      North West
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="West"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      West
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="South East"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      South East
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="South"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      South
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="South West"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      South West
+                    </Checkbox>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="_housiko_list_prop_feature_content">
-              <h3 className="_housiko_list_prop_feature_content_title">
-                Orientation
-              </h3>
-              <div className="_housiko_list_prop_feature_check_wrap">
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    North
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    North East
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    East
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    North West
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    West
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    South East
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    South
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    South West
-                  </Checkbox>
-                </div>
-              </div>
-            </div>
-            <div className="_housiko_list_prop_feature_content">
-              <h3 className="_housiko_list_prop_feature_content_title">
-                Conservation status
-              </h3>
-              <div className="_housiko_list_prop_feature_check_wrap">
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Almost New
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    For renovation
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Good
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Very good
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    Refurbished
-                  </Checkbox>
-                </div>
-                <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
-                  <Checkbox className="_login_input_check _city_input_check_login_input_check _login_input_label">
-                    New
-                  </Checkbox>
+            </Checkbox.Group>
+            <Checkbox.Group onChange={onConservationStatusChange}>
+              <div className="_housiko_list_prop_feature_content">
+                <h3 className="_housiko_list_prop_feature_content_title">
+                  Conservation status
+                </h3>
+                <div className="_housiko_list_prop_feature_check_wrap">
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Almost New"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Almost New
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="For renovation"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      For renovation
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Good"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Good
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Very good"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Very good
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="Refurbished"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      Refurbished
+                    </Checkbox>
+                  </div>
+                  <div className="_housiko_list_prop_feature_check _city_map_tab_content_all_wrap _login_remember_check">
+                    <Checkbox
+                      value="New"
+                      className="_login_input_check _city_input_check_login_input_check _login_input_label"
+                    >
+                      New
+                    </Checkbox>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Checkbox.Group>
           </div>
           <div className="_housiko_list_prop_feature_inner _housiko_list_prop_feature_inner2">
             <div className="_housiko_list_prop_feature_content">

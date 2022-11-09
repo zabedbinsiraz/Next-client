@@ -13,14 +13,10 @@ const { TextArea } = Input;
 export const LoginModal = ({ open, cancel, showCreate }: any) => {
   const router = useRouter();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleLoginForm = async () => {
-    const loginDetails = { email, password };
-
+  const handleLoginForm = async (e) => {
     try {
-      const { data } = await callApi("api/auth/login", "post", loginDetails);
+      const data = await callApi("api/auth/login", "post", e);
+      console.log(data);
       if (data) {
         cancel();
         router.push("/");
@@ -28,6 +24,7 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
     } catch (error) {
       console.log(error);
     }
+    console.log(e);
   };
 
   return (
@@ -58,8 +55,6 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
                 placeholder="Email*"
                 className="_login_input"
                 name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
               />
             </Form.Item>
 
@@ -76,8 +71,6 @@ export const LoginModal = ({ open, cancel, showCreate }: any) => {
                 placeholder="Password*"
                 className="_login_input"
                 name="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Item>
 
@@ -158,6 +151,7 @@ export const CreateAccount = ({ open, cancel }: any) => {
   const handleSignUpForm = async (e) => {
     e.password_confirmation = e.password;
     e.is_agency = isAgency;
+    e.is_email_verified = false;
     // userSignUpDetails.password_confirm = password;
     try {
       const { data } = await callApi("api/auth/register", "post", e);
@@ -193,7 +187,7 @@ export const CreateAccount = ({ open, cancel }: any) => {
         </div>
         <Form onFinish={handleSignUpForm}>
           <Form.Item
-            name="fullName"
+            name="full_name"
             rules={[
               {
                 required: true,

@@ -1,7 +1,7 @@
 import { Drawer, Input, Select } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { SvgIcon } from "../Design/SvgIcon";
 import {
@@ -19,15 +19,20 @@ import {
   MoreFilterModal,
   SaveSearch,
 } from "../Modals/Modals";
+import en from "./en.json";
+import hu_Hu from "./hu_Hu.json";
 
 const { Option } = Select;
 
 const Navbar = () => {
-  const { pathname, query } = useRouter();
-  // const [isLoginVal, setisLoginVal] = useState(isLogin.get('isLogin'));
-  const isLoginVal = query.isLogin;
+  const router = useRouter();
+  const { pathname, query, asPath, locale } = useRouter();
 
-  // const [isLoginVal, setisLoginVal] = useState(url.searchParams.get("isLogin"));
+  const isLoginVal = query.isLogin;
+  console.log(locale);
+
+  const t = locale === "en-GB" ? en : hu_Hu;
+  console.log(locale);
 
   const pathToAvoid = ["/dashboard", "/dashboardagent", "/pricing"];
 
@@ -37,6 +42,11 @@ const Navbar = () => {
   const [isCityModalOpen, setCityModalOpen] = useState(false);
   const [moreFilterModal, setMoreFilterModal] = useState(false);
   const [saveSearch, setSaveSearch] = useState(false);
+
+  const changeLanguage = (e) => {
+    const locale = e;
+    router.push({ pathname, query }, asPath, { locale });
+  };
 
   console.log(pathname);
   // Drawer
@@ -169,7 +179,7 @@ const Navbar = () => {
                 </button>
               </li>
               <li className="nav-item">
-                <Link href="/listproperty">
+                <Link href="/ListProperty" passHref>
                   <a className="nav-link _navbar_btn _myinfo_navbar_btn_list _navbar_link">
                     List Your Property For FREE
                   </a>
@@ -181,14 +191,14 @@ const Navbar = () => {
               <li className="nav-item">
                 <button className="nav-link _navbar_btn3">
                   <Select
-                    defaultValue={`english`}
+                    defaultValue={`en-GB`}
                     suffixIcon={""}
                     style={{
                       paddingRight: 0,
                       width: "auto",
                     }}
                   >
-                    <Option value="english" label="english">
+                    <Option value="en-GB" label="english">
                       <div className="option-label-item d-flex">
                         <span
                           className="_navbar_btn3_flag_wrap"
@@ -203,7 +213,7 @@ const Navbar = () => {
                         </span>
                       </div>
                     </Option>
-                    <Option value="hungarian" label="hungarian">
+                    <Option value="hu_Hu" label="hungarian">
                       <div className="option-label-item d-flex">
                         <span
                           className="_navbar_btn3_flag_wrap"
@@ -298,7 +308,7 @@ const Navbar = () => {
                   onSelect={changeOption}
                   value={option}
                 >
-                  <Option value="buy">Buy</Option>
+                  <Option value="buy">{t.buy}</Option>
                   <Option value="rent">Rent</Option>
                 </Select>
               </div>
@@ -383,9 +393,10 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/listproperty"
+                    href="/ListProperty"
                     className="nav-link _navbar_btn _navbar_btn_list _navbar_link"
                   >
+                    <a></a>
                     List Your Property For FREE
                   </Link>
                 </li>
@@ -403,14 +414,14 @@ const Navbar = () => {
                 <li className="nav-item">
                   <button className="nav-link _navbar_btn3">
                     <Select
-                      defaultValue={`english`}
+                      defaultValue={`en-GB`}
                       suffixIcon={""}
                       style={{
                         paddingRight: 0,
                         width: "auto",
                       }}
                     >
-                      <Option value="english" label="english">
+                      <Option value="en-GB" label="english">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -425,7 +436,7 @@ const Navbar = () => {
                           </span>
                         </div>
                       </Option>
-                      <Option value="hungarian" label="hungarian">
+                      <Option value="hu_Hu" label="hungarian">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -461,7 +472,7 @@ const Navbar = () => {
                   className="_housiko_drawer_li"
                   onClick={() => changeOption("buy")}
                 >
-                  <Link href="/listing?option=buy">Buy</Link>
+                  <Link href="/listing?option=buy">{t.buy}</Link>
                 </div>
                 <div
                   className="_housiko_drawer_li"
@@ -741,7 +752,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/listproperty"
+                    href="/ListProperty"
                     className="nav-link _navbar_btn _myinfo_navbar_btn_list _navbar_link"
                   >
                     List Your Property For FREE
@@ -771,14 +782,15 @@ const Navbar = () => {
                 <li className="nav-item">
                   <button className="nav-link _navbar_btn3">
                     <Select
-                      defaultValue={`english`}
+                      defaultValue={`en-GB`}
+                      onChange={changeLanguage}
                       suffixIcon={""}
                       style={{
                         paddingRight: 0,
                         width: "auto",
                       }}
                     >
-                      <Option value="english" label="english">
+                      <Option value="en-GB" label="english">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -793,7 +805,7 @@ const Navbar = () => {
                           </span>
                         </div>
                       </Option>
-                      <Option value="hungarian" label="hungarian">
+                      <Option value="hu_Hu" label="hungarian">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -829,7 +841,7 @@ const Navbar = () => {
                   className="_housiko_drawer_li"
                   onClick={() => changeOption("buy")}
                 >
-                  <Link href="/listing?option=buy">Buy</Link>
+                  <Link href="/listing?option=buy">{t.buy}</Link>
                 </div>
                 <div
                   className="_housiko_drawer_li"
@@ -951,10 +963,10 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/listproperty"
+                    href="/ListProperty"
                     className="nav-link _navbar_btn _navbar_btn_list _navbar_link"
                   >
-                    List Your Property For FREE
+                    <a>List Your Property For FREE</a>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -963,14 +975,15 @@ const Navbar = () => {
                 <li className="nav-item">
                   <button className="nav-link _navbar_btn3">
                     <Select
-                      defaultValue={`english`}
+                      defaultValue={`en-GB`}
                       suffixIcon={""}
+                      onChange={changeLanguage}
                       style={{
                         paddingRight: 0,
                         width: "auto",
                       }}
                     >
-                      <Option value="english" label="english">
+                      <Option value="en-GB" label="english">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -985,7 +998,7 @@ const Navbar = () => {
                           </span>
                         </div>
                       </Option>
-                      <Option value="hungarian" label="hungarian">
+                      <Option value="hu_Hu" label="hungarian">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -1051,7 +1064,7 @@ const Navbar = () => {
                   {/* <a className="nav-link _navbar_link" href="#0">Buy</a> */}
                   <Link href="/listing?option=buy">
                     <a>
-                      <div className="nav-link _navbar_link">Buy</div>
+                      <div className="nav-link _navbar_link">{t.buy}</div>
                     </a>
                   </Link>
                 </li>
@@ -1164,7 +1177,7 @@ const Navbar = () => {
                                     </button> */}
                 </li>
                 <li className="nav-item">
-                  <Link href="/listproperty">
+                  <Link href="/ListProperty">
                     <a>
                       <div className="nav-link _navbar_btn _navbar_btn_list _navbar_link">
                         List Your Property For FREE
@@ -1186,14 +1199,15 @@ const Navbar = () => {
                 <li className="nav-item">
                   <button className="nav-link _navbar_btn3">
                     <Select
-                      defaultValue={`english`}
+                      defaultValue={`en-GB`}
                       suffixIcon={""}
+                      onChange={changeLanguage}
                       style={{
                         paddingRight: 0,
                         width: "auto",
                       }}
                     >
-                      <Option value="english" label="english">
+                      <Option value="en-GB" label="english">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"
@@ -1208,7 +1222,7 @@ const Navbar = () => {
                           </span>
                         </div>
                       </Option>
-                      <Option value="hungarian" label="hungarian">
+                      <Option value="hu_Hu" label="hungarian">
                         <div className="option-label-item d-flex">
                           <span
                             className="_navbar_btn3_flag_wrap"

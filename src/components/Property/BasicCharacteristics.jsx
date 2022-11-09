@@ -126,7 +126,7 @@ const BasicCharacteristics = ({
           Type of home
         </label>
         <div className="_housiko_list_prop_characterstics_input_inner">
-          <Form.Item name="home_type">
+          <Form.Item>
             <TypeDropdown
               setHomeType={setHomeType}
               showTypeDropSown={showTypeDropSown}
